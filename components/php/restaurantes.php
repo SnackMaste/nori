@@ -46,7 +46,7 @@ if (isset($_POST['ciudad'])){
             }
             $fichas .= '<!-- pantalla grandes hacia arriba -->
         <div class="container-fluid w-75 bg-black my-5 rounded-4 border border-3 border-warning d-none d-lg-flex align-items-center" style="height: 200px;" >
-            <img src="images/restaurants/'.$imagenR.'" alt="imagen del restaurante" style="width: 10vw; max-width: 170px;" class="rounded-4 border border-3 border-warning">
+            <img src="images/restaurants/'.strtolower($imagenR).'" alt="imagen del restaurante" style="width: 10vw; max-width: 170px;" class="rounded-4 border border-3 border-warning">
             <div class="text-center mx-auto" >
                 <span class="FontPrimary fs-4">'. $tipoCalle .' '.$calle.' # '.$nCalle.' '.$barrio.', '.$ciudadR.', '.$paisR.'</span>
                 <div class="d-flex align-items-center justify-content-center">
@@ -65,7 +65,7 @@ if (isset($_POST['ciudad'])){
         </div>
         <!-- pantalla mediana -->
         <div class="container-fluid w-75 bg-black my-5 rounded-4 border border-3 border-warning d-none d-md-flex d-lg-none align-items-center" style="height: 200px;" >
-            <img src="images/restaurants/'.$imagenR.'" alt="imagen del restaurante" style="width: 15vw;" class="rounded-4 border border-3 border-warning">
+            <img src="images/restaurants/'.strtolower($imagenR).'" alt="imagen del restaurante" style="width: 15vw;" class="rounded-4 border border-3 border-warning">
             <div class="text-center mx-auto" >
                 <span class="FontPrimary fs-5">'. $tipoCalle .' '.$calle.' # '.$nCalle.' '.$barrio.', '.$ciudadR.', '.$paisR.'</span>
                 <div class="d-flex align-items-center justify-content-center">
@@ -84,7 +84,7 @@ if (isset($_POST['ciudad'])){
         </div>
         <!-- pantalla pequeña hacia abajo -->
         <div class="container-fluid bg-black my-5 rounded-4 border border-3 border-warning d-flex d-md-none align-items-center" style="min-height: 200px;width: 95vw;" >
-            <img src="images/restaurants/'.$imagenR.'" alt="imagen del restaurante" style="width: 25vw;" class="rounded-4 border border-3 border-warning">
+            <img src="images/restaurants/'.strtolower($imagenR).'" alt="imagen del restaurante" style="width: 25vw;" class="rounded-4 border border-3 border-warning">
             <div>
                 <div class="text-center mx-auto" >
                     <span class="FontPrimary fs-6">'. $tipoCalle .' '.$calle.' # '.$nCalle.' '.$barrio.', '.$ciudadR.', '.$paisR.'</span>
