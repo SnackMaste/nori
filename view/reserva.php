@@ -4,7 +4,7 @@
             <span class="FontCanji fs-1">花見  Hanami</span>
         </div>
         <div class="d-flex justify-content-center">
-            <img src="./images/events/EventoDeCerezo.jpg" alt="" class="w-50" style="min-width: 200px; max-width: 600px">
+            <img src="./images/events/eventodecerezo.avif" alt="imagen de postres rosas" class="w-50" style="min-width: 200px; max-width: 600px">
         </div>
         <div class="container-sm text-center"><span class=" FontParrafo fs-4">“Festival de la Flor de Cerezo en NORI: Únete a nosotros para celebrar la belleza y la tradición del Hanami, el festival japonés de la flor del cerezo. Disfruta de una experiencia culinaria única con nuestro menú especial de sushi, inspirado en la primavera y la efímera belleza de los cerezos en flor. Sumérgete en la cultura japonesa mientras te deleitas con nuestros exquisitos platos, en un ambiente decorado al estilo de los tradicionales picnics de Hanami bajo los cerezos. ¡Ven y celebra con nosotros la llegada de la primavera y la belleza de la flor de cerezo!”</span></div>
     </div>
@@ -13,7 +13,7 @@
             <span class="FontCanji fs-1">七夕 Tanabata</span>
         </div>
         <div class="d-flex justify-content-center">
-            <img src="./images/events/eventoDeLasEstrellas.jpg" alt="" class="w-50" style="min-width: 200px; max-width: 600px">
+            <img src="./images/events/eventodelasestrellas.avif" alt="imagen de sushi con estrellas" class="w-50" style="min-width: 200px; max-width: 600px">
         </div>
         <div class="container-sm text-center"><span class=" FontParrafo fs-4">“Festival de Tanabata en NORI: Únete a nosotros para celebrar Tanabata, una de las festividades más coloridas de Japón. Disfruta de nuestro menú especial de sushi mientras te sumerges en la tradición de escribir tus deseos en tiras de papel y colgarlos en nuestras decoraciones de bambú. Experimenta la magia de esta antigua celebración de amor y esperanza en nuestro restaurante. ¡Ven y haz un deseo bajo las estrellas de Tanabata con nosotros!”</span></div>
     </div>
@@ -22,7 +22,7 @@
             <span class="FontCanji fs-1">Reuniones</span>
         </div>
         <div class="d-flex justify-content-center">
-            <img src="./images/events/eventoReunion.jpg" alt="" class="w-50" style="min-width: 200px; max-width: 600px">
+            <img src="./images/events/eventoreunion.avif" alt="imagen de sushi ejecutivo" class="w-50" style="min-width: 200px; max-width: 600px">
         </div>
         <div class="container-sm text-center"><span class=" FontParrafo fs-4">Evento de Cumpleaños en NORI: Celebra tu cumpleaños con un toque japonés. Disfruta de nuestro delicioso sushi y vive una experiencia única. Ofrecemos un menú especial para cumpleañeros y decoramos tu mesa con detalles festivos. ¡Ven a celebrar tu día especial con nosotros!</span></div>
     </div>
@@ -31,7 +31,7 @@
             <span class="FontCanji fs-1">Cumpleaños</span>
         </div>
         <div class="d-flex justify-content-center">
-            <img src="./images/events/eventoDeCumpleaños.jpg" alt="" class="w-50" style="min-width: 200px; max-width: 600px">
+            <img src="./images/events/eventodecumpleaños.avif" alt="imagen de sushi especial" class="w-50" style="min-width: 200px; max-width: 600px">
         </div>
         <div class="container-sm text-center"><span class=" FontParrafo fs-4">Evento de Reuniones en NORI: ¿Buscas un lugar para tu próxima reunión de negocios o encuentro con amigos? Nuestro restaurante ofrece un ambiente tranquilo y acogedor, perfecto para reuniones. Disfruta de nuestro exquisito sushi mientras te reúnes. Ofrecemos opciones de menú personalizadas para grupos. ¡Haz de tu reunión una experiencia memorable con nosotros!</span></div>
     </div>
