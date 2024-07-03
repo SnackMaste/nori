@@ -42,43 +42,43 @@
 <div class="border-img-t">
     <form action="/Solicitudes/reserva.php" method="post" class="my-4 p-4 d-flex flex-column align-items-center">
         <div class="w-100 d-flex flex-wrap justify-content-around">
-            <div class="w-25 border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center" style="min-width: 200px;">
+            <div class="container-sm border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center my-3" style="min-width: 200px; max-width:450px;">
                 <h5 class="text-center my-3"><span class="FontPrimary">INFORMACIÓN RESTAURANTE</span></h5>
-                <label class="FontParrafo" for="PaisReserva">País:</label>
+                <label class="FontParrafo text-center" for="PaisReserva">País:</label>
                 <br>
                 <select name="Pais" id="PaisReserva" onchange="getciudad()" class="w-75 bg-black border border-3 border-warning rounded-3 FontParrafo" required></select>
                 <br>
-                <label class="FontParrafo" for="CiudadReserva">Ciudad:</label>
+                <label class="FontParrafo text-center" for="CiudadReserva">Ciudad:</label>
                 <br>
                 <select name="Ciudad" id="CiudadReserva" onchange="getrestaurante()" class="w-75 bg-black border border-3 border-warning rounded-3 FontParrafo" required></select>
                 <br>
-                <label class="FontParrafo" for="estauranteReserva">Restaurante:</label>
+                <label class="FontParrafo text-center" for="estauranteReserva">Restaurante:</label>
                 <br>
                 <select name="Restaurante" id="RestauranteReserva" required class="w-75 bg-black border border-3 border-warning rounded-3 FontParrafo"></select>
             </div>
-            <div class="w-25 border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center" style="min-width: 200px;">
+            <div class="container-sm border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center my-3" style="min-width: 200px; max-width:450px;">
                 <h5 class="text-center my-3"><span class="FontPrimary">INFORMACIÓN RESERVA</span></h5>
-                <label for="NumPersonas" class="FontPrimary"><span class="FontPrimary">Número de personas:</span></label>
+                <label for="NumPersonas" class="FontPrimary text-center"><span class="FontPrimary">Número de personas:</span></label>
                 <br>
                 <input type="number" id="NumPersonas" name="numeroPersonas" required class="text-center w-75 bg-black border border-3 border-warning rounded-3 FontParrafo">
                 <br>
-                <label for="fechaReserva" class="FontPrimary"><span class="FontPrimary">Fecha De Reserva:</span></label>
+                <label for="fechaReserva" class="FontPrimary text-center"><span class="FontPrimary">Fecha De Reserva:</span></label>
                 <br>
                 <input type="date" id="fechaReserva" name="Fecha" required class="text-center w-75 bg-black border border-3 border-warning rounded-3 FontParrafo">
                 <br>
-                <label for="HoraReserva" class="FontPrimary"><span class="FontPrimary">Hora Reserva Disponible:</span></label>
+                <label for="HoraReserva" class="FontPrimary text-center"><span class="FontPrimary">Hora Reserva Disponible:</span></label>
                 <br>
                 <select id="HoraReserva" name="Hora" required class="text-center w-75 bg-black border border-3 border-warning rounded-3 FontParrafo"></select>
                 <br>
-                <div class="nota FontParrafo FontSize4 mt-2">Nota: Durante el fin de semana no se aceptan reservas</div>
+                <div class="nota FontParrafo FontSize4 mt-2 text-center text-danger">Nota: Durante el fin de semana no se aceptan reservas</div>
             </div>
-            <div class="w-25 border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center" style="min-width: 200px;">
+            <div class="container-sm border border-3 border-warning rounded-3 p-3 d-flex flex-column align-items-center my-3" style="min-width: 200px; max-width:450px;">
                     <h5 class="text-center my-3"><span class="FontPrimary">INFORMACIÓN ADICIONAL</span></h5>
-                    <label for="ocasion" class="mb-2" ><span class="FontPrimary">Ocasión o evento:</span></label>
+                    <label for="ocasion" class="mb-2 text-center" ><span class="FontPrimary">Ocasión o evento:</span></label>
                     <br>
                     <input type="text" id="ocasion" name="Ocasion" placeholder="Opcional" maxlength="25" class="mb-2 text-center w-75 bg-black border border-3 border-warning rounded-3 FontParrafo">
                     <br>
-                    <label for="EspecificacionEvento" class="mb-2" ><span class="FontPrimary">¿Alguna especificación del evento?</span></label>
+                    <label for="EspecificacionEvento" class="mb-2 text-center" ><span class="FontPrimary">¿Alguna especificación del evento?</span></label>
                     <br>
                     <textarea id="EspecificacionEvento" name="Comentario" placeholder="Opcional" maxlength="100" class="text-center w-75 bg-black border border-3 border-warning rounded-3 FontParrafo" style="height: 90px;"></textarea>
             </div>

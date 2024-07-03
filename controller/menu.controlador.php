@@ -29,7 +29,7 @@ class Menu_Controlador {
             if($moneda == "VES"){$pecioFormateado = number_format($result['price_product_venezuela'],2,',','.');$precio=$result['price_product_venezuela'];};
             if($moneda == "PEN"){$pecioFormateado = number_format($result['price_product_peru'],2,',','.');$precio=$result['price_product_peru'];};
             $respuesta .= '<div class="d-flex flex-column border border-3 border-warning rounded-3 my-2 mx-4 align-items-center justify-content-around" style="width: 200px;" data-name="'.$result["name_product"].'" data-tipo="'.$result["id_type_product_product"].'">
-                <img src="./images/products/'.$result["image_product"].'" alt="" class="p-2 rounded-5 " style="width: 190px;" >
+                <img src="./images/products/'.strtolower($result["image_product"]).'" alt="" class="p-2 rounded-5 " style="width: 190px;" >
                 <div class="w-100 text-center border-img-t" id="1">
                     <div class="d-flex justify-content-around">
                         <div class="w-50 py-1" style="border-right: solid 0.25vh;border-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%)1;">
