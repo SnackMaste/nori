@@ -1,0 +1,1539 @@
+@charset "UTF-8";
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parrafo";
+  src: url("https://fonts.gstatic.com/s/archivonarrow/v30/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1iXlw398pJxk.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canji";
+  src: url("https://fonts.gstatic.com/s/newtegomin/v10/SLXMc1fV7Gd9USdBAfPlqfN0Q3ptkDMN.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Secundary";
+  src: url("https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k736J_B-i2yQag0-mac3OFiXMFuOLlNldbw.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estrella";
+  src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+.FontPromo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 30px;
+}
+
+.FontPromoTitulo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 40px;
+}
+
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontAni:hover {
+  animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 150vw;
+  }
+}
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontParrafo {
+  font-family: "Parrafo";
+  color: #e98f25;
+}
+
+.FontCanji {
+  font-family: "Canji";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontEstrella {
+  font-family: "Estrella";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 2px;
+}
+
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+.FontSecundary {
+  font-family: "Primary";
+  color: #000;
+}
+
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta abierto
+-----------------------------------------
+*/
+.ABIERTO {
+  width: 100px;
+  height: 22px;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+  background-color: #00f552;
+  font-family: "Primary";
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+}
+
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta cerrado
+-----------------------------------------
+*/
+.CERRADO {
+  width: 100px;
+  height: 22px;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+  background-color: #f50039;
+  font-family: "Primary";
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+}
+
+.ContadorProductos {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #e98f25;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*
+------------------------------------------
+Separador
+COMO USAR
+<div class="Separador"></div>
+------------------------------------------
+*/
+.Separador {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 3px 0;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+}
+
+/*
+-------------------------------------------
+Separador que incluye texto dentro
+COMO USAR
+<div class="SeparadorConText">
+        <p class="TextSeparador">
+            <span class="FontPrimary">¿Quienes Somos?</span>
+        </p>
+    </div>
+-------------------------------------------
+*/
+.SeparadorConText {
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 3px 0;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  text-align: center;
+  font-size: 40px;
+}
+
+.TextSeparador {
+  position: relative;
+  top: 10px;
+}
+
+/*
+------------------------------
+Menu de navegacion
+COMO USAR
+<nav class="Nav">
+    <a class="NavLink Opc1">
+        <div class="BtnNav">
+            <span class="FontAni">INICIO</span>
+        </div>
+    </a>
+    <a class="NavLink Opc2">
+        <div class="BtnNav">
+            <span class="FontAni">MENÚ</span>
+        </div>
+    </a>
+    <a class="NavLink Opc3">
+        <div class="BtnNav">
+            <span class="FontAni">RESERVA</span>
+        </div>
+    </a>
+    <a class="NavLink Opc4">
+        <img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+    </a>
+</nav>
+------------------------------
+*/
+.Nav {
+  display: flex;
+}
+
+.NavLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+/*
+Posicion de las opciones iniciales
+*/
+.Opc4 {
+  right: 0;
+}
+
+.Opc3 {
+  right: 80px;
+}
+
+.Opc2 {
+  right: 200px;
+}
+
+.Opc1 {
+  right: 290px;
+}
+
+.Opc1, .Opc2, .Opc3 {
+  top: 10px;
+}
+
+/*
+posicion de las opciones con el efecto hover para que se vea centrado el efecto
+*/
+.Opc3:hover {
+  right: 75px;
+  top: 9px;
+}
+
+.Opc2:hover {
+  right: 195px;
+  top: 9px;
+}
+
+.Opc1:hover {
+  right: 285px;
+  top: 9px;
+}
+
+/*
+---------------------------------------
+Botones que contienen iconos y texto y un borde
+COMO USAR:
+<button class="BtnDownload">
+        <img src="../Atoms/Icons/google-play.png" alt="google-play">
+        <div class="FontAni">
+            <span class="FontSize3">Disponible en </span>
+            <span class="FontSize4">GOOGLE PLAY</span>
+        </div>
+    </button>
+---------------------------------------
+*/
+.BtnDownload {
+  width: 170px;
+  height: 40px;
+  background: transparent;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+}
+
+.BtnDownload img {
+  display: block;
+  width: 25px;
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+
+.BtnDownload div {
+  position: relative;
+  top: -28px;
+  left: 15px;
+}
+
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnDownload:hover, .BtnMenu:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  cursor: pointer;
+  position: relative;
+  right: 5px;
+}
+
+/*
+-----------------------------------------------
+BOTON MENU
+COMO USAR
+<button class="BtnMenu"><span class="FontAni">Ver Menú</span></button>
+-----------------------------------------------
+*/
+.BtnMenu {
+  width: 100px;
+  height: 30px;
+  background: #004000;
+  font-size: 16px;
+  border: solid 3px;
+  border-color: #e98f25;
+  border-radius: 20px;
+}
+
+/*
+--------------------------------------
+Botones que son solo letras
+COMO USAR:
+<div class="BtnNav"><span class="FontAni">INICIO</span></div>
+--------------------------------------
+*/
+.BtnNav {
+  font-size: 16px;
+}
+
+/*
+---------------------------------------
+Botones que son solo iconos
+COMO USAR: 
+<img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+---------------------------------------
+*/
+.BtnIcons {
+  display: block;
+  width: 40px;
+}
+
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnNav:hover {
+  font-size: 18px;
+  margin-left: -5px;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.BtnIcons:hover {
+  animation: rotationIcon 0.5s forwards;
+  cursor: pointer;
+}
+
+@keyframes rotationIcon {
+  from {
+    transform: scale(1.1) rotate(0deg);
+  }
+  to {
+    transform: scale(1.1) rotate(360deg);
+  }
+}
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: solid 3px transparent;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  background-color: #000;
+}
+
+.Nav {
+  position: relative;
+  top: -70px;
+  right: 50px;
+}
+
+.Logo {
+  display: block;
+  width: 100px;
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
+
+.NombrePagina {
+  position: relative;
+  left: 200px;
+}
+
+.Download {
+  width: 500px;
+  height: 100px;
+}
+
+.BtnDownload {
+  margin: 0 10px;
+}
+
+.Redes {
+  width: 500px;
+  height: 40px;
+  display: flex;
+}
+
+.Redes > .BtnIcons {
+  margin: 0 50px;
+}
+
+.Footer {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  border-top: solid 3px transparent;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+}
+
+.Download {
+  position: relative;
+  left: 500px;
+  top: 50px;
+}
+
+.Redes {
+  position: relative;
+  left: 400px;
+  top: 25px;
+}
+
+/*SELECT DE PAIS*/
+.icon-selectPais {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerPais {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectPais {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionPais {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valuePais, .icon-selectPais {
+  padding: 2px 10px;
+}
+
+.optionsPais {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsPais[data-pais=collapsedPais] {
+  display: none;
+}
+
+.icon-selectPais[data-paisicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionPais {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.optionPais:hover {
+  background-color: #202020;
+}
+
+/*SELECT DE CIUDAD*/
+.icon-selectCiudad {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerCiudad {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectCiudad {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionCiudad {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valueCiudad, .icon-selectCiudad {
+  padding: 2px 10px;
+}
+
+.optionsCiudad {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsCiudad[data-ciudad=collapsedCiudad] {
+  display: none;
+}
+
+.icon-selectCiudad[data-ciudadicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionCiudad {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.optionCiudad:hover {
+  background-color: #202020;
+}
+
+/*SELECT DE Tipoproducto*/
+.icon-selectTipoproducto {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerTipoproducto {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectTipoproducto {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionTipoproducto {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valueTipoproducto, .icon-selectTipoproducto {
+  padding: 2px 10px;
+}
+
+.optionsTipoproducto {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsTipoproducto[data-tipoproducto=collapsedTipoproducto] {
+  display: none;
+}
+
+.icon-selectTipoproducto[data-tipoproductoicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionTipoproducto {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.optionTipoproducto:hover {
+  background-color: #202020;
+}
+
+/*SELECT DE Tamaño*/
+.icon-selectTamaño {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerTamaño {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectTamaño {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionTamaño {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valueTamaño, .icon-selectTamaño {
+  padding: 2px 10px;
+}
+
+.optionsTamaño {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsTamaño[data-tamaño=collapsedTamaño] {
+  display: none;
+}
+
+.icon-selectTamaño[data-tamañoicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionTamaño {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.optionTamaño:hover {
+  background-color: #202020;
+}
+
+/*SELECT DE Valoracion*/
+.icon-selectValoracion {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerValoracion {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectValoracion {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionValoracion {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valueValoracion, .icon-selectValoracion {
+  padding: 2px 10px;
+}
+
+.optionsValoracion {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsValoracion[data-valoracion=collapsedValoracion] {
+  display: none;
+}
+
+.icon-selectValoracion[data-valoracionicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionValoracion {
+  width: 179px;
+  height: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.optionDefect {
+  width: 179px;
+  height: 20px;
+  padding: 5px 10px;
+  cursor: default;
+  display: flex;
+}
+
+.optionValoracion:hover {
+  background-color: #202020;
+}
+
+.Filtro-container {
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+  border-bottom: solid 3px transparent;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  text-align: center;
+}
+
+.DosFiltros {
+  width: 600px;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: calc(50% - 300px);
+}
+
+.TresFiltros {
+  width: 800px;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: calc(50% - 400px);
+}
+
+.TituloFiltro {
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+.prueba {
+  display: block;
+  height: 15px;
+}
+
+.cls-1 {
+  fill: gold;
+  max-width: 20px;
+  margin: -10px;
+}
+
+.BtnEstrellasRestaurante {
+  display: flex;
+  background-color: #000;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: 3px solid #e98f25;
+}
+
+.BtnEstrellasRestaurante:hover {
+  transform: scale(1.1);
+}
+
+.BtnEstrellasProducto {
+  background-color: transparent;
+  display: flex;
+  width: 220px;
+  height: 80%;
+  border: none;
+  align-items: center;
+  margin-left: 9%;
+  margin-top: 7px;
+}
+
+.BtnEstrellasProducto:hover {
+  transform: scale(1.1);
+}
+
+.Restaurantes {
+  width: calc(100% - 90px);
+  height: 250px;
+  background-color: #000;
+  border: 3px solid #e98f25;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+}
+
+.ImgRestaurante {
+  height: calc(100% - 16px);
+  display: block;
+  border: 2px solid #e98f25;
+  border-radius: 10px;
+  margin: 6px 25px;
+}
+
+.InfoRestaurante {
+  height: 100%;
+  width: 600px;
+  text-align: center;
+}
+
+.IconTelefonoR {
+  padding-top: 15px;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+.TelefonoRestaurante {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.BtnRestaurante {
+  width: 200px;
+  justify-content: center;
+}
+
+.ABIERTO, .CERRADO {
+  margin: 20px auto 40px;
+}
+
+.BtnMenu {
+  margin: 40px calc(50% - 50px) 20px;
+}
+
+.BtnEstrellasRestaurante {
+  margin: 20px auto 40px;
+}
+
+.ProductoContainer {
+  width: 240px;
+  height: 350px;
+  background-color: #000;
+  border: 2px solid #e98f25;
+  border-radius: 20px;
+  margin: 20px 10px;
+}
+
+.ImgProducto {
+  display: block;
+  width: 220px;
+  margin: 10px auto;
+  border: 2px solid #e98f25;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.ImgProducto:hover {
+  position: relative;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.BtnProductoContenedor {
+  border-top: 2px solid #e98f25;
+  width: 100%;
+  height: 35%;
+  align-items: center;
+}
+
+.SeparadorBtnProducto {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  border-top: 2px solid #e98f25;
+  margin-top: -2px;
+}
+
+.SeparadorBtnVertical {
+  width: 0;
+  height: 100%;
+  border-left: 2px solid #e98f25;
+}
+
+.ContenedorBtnProducto {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.PrecioProducto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.NombreProducto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.NombreProducto:hover {
+  position: relative;
+  transform: scale(1.2);
+  cursor: default;
+}
+
+.Fichas {
+  background-color: #000;
+  width: calc(100% - 30px);
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.relleno {
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+}
+
+.NombreProductoModal {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.DescripcionProducto {
+  margin-top: 10vh;
+  margin-left: 3vw;
+  width: 50%;
+}
+
+.ImgProductoModal {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 3vh;
+  position: absolute;
+  top: 25vh;
+  left: 60%;
+}
+
+.CantidadProducto {
+  margin-left: 3vw;
+  margin-top: 5vh;
+}
+
+.CerrarModal {
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  left: 96%;
+  top: 3vh;
+}
+
+.CerrarModal:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.ContenidoLogin {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-image: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  opacity: 0.5;
+}
+
+.ContenidoLogin div {
+  margin: 80px 40px;
+  color: #000;
+  transition: all 500ms;
+}
+
+.ContenidoLogin div p,
+.ContenidoLogin div button {
+  margin-top: 30px;
+  font-family: Secundary;
+  border-radius: 3px;
+}
+
+.ContenidoLogin h3 {
+  font-family: Primary;
+  font-size: 18px;
+}
+
+.ContenidoLogin button {
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #000;
+  font-size: 14px;
+  outline: none;
+  transition: all 300ms;
+  border-radius: 3px;
+}
+
+.ContenidoLogin button:hover {
+  background-color: #000;
+  color: #e98f25;
+}
+
+/*FORMULARIOS*/
+.ContenedorFormularios {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 15px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ContenedorFormularios form {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 20px;
+  border: 3px solid #e98f25;
+}
+
+.ContenedorFormularios h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  font-size: 22px;
+}
+
+.ContenedorFormularios legend {
+  border: none;
+  font-size: 14px;
+  font-family: Primary;
+  color: #e98f25;
+}
+
+.ContenedorFormularios fieldset {
+  border: none;
+}
+
+.ContenedorFormularios input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Primary;
+}
+
+.Olvide {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ContenedorFormularios div a {
+  text-decoration: none;
+  color: #e98f25;
+  font-size: 12px;
+  font-family: Secundary;
+}
+
+.BotonFormulario {
+  display: flex;
+  justify-content: center;
+}
+
+.ContenedorFormularios form div button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: #e98f25;
+  color: #000;
+  font-family: Primary;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.MensajeRegistro {
+  color: #e98f25;
+  font-size: 10px;
+  font-family: Primary;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.FormularioLogin {
+  opacity: 1;
+  display: block;
+}
+
+.FormularioRegistro {
+  display: none;
+  position: absolute;
+  top: -275px;
+  transition: all 300ms;
+}
+
+.CerrarModal {
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  left: 96%;
+  top: 3vh;
+}
+
+.ContenedorFormularios input.InputCorto {
+  width: 31%;
+}
+
+.ContenedorFormularios select {
+  width: 45%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Primary;
+  cursor: pointer;
+}
+
+.ContenedorFormularios option {
+  font-family: Primary;
+  cursor: pointer;
+}
+
+.BotonPersonaEmpresa, .BotonPersonaEmpresaLogin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#BtnPersona, #BtnEmpresa, #BtnPersonaLogin, #BtnEmpresaLogin {
+  margin: auto 10px;
+  width: 40%;
+  margin-left: 10px;
+}
+
+#AtrasDatosPersonales, #AtrasDireccion {
+  margin-right: 10px;
+}
+
+#SiguienteContacto, #EnviarRegistro {
+  margin-left: 10px;
+}
+
+.Empresa {
+  display: none;
+}
+
+.Legend {
+  display: flex;
+  justify-content: center;
+}
+
+.alerta {
+  display: none;
+  color: #f50039;
+  font-family: Primary;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 100;
+}
+
+#Empresa {
+  display: none;
+}
+
+#Direccion {
+  display: none;
+}
+
+#Contacto {
+  display: none;
+}
+
+.img-flag {
+  width: 30px;
+  margin-left: -10px;
+  margin-top: -2px;
+}
+
+.inputNumero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.BanderaContenedor, .NumeroContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NumeroContenedor {
+  width: calc(100% - 40px);
+}
+
+.BanderaContenedor {
+  padding-top: 10px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#countryCode {
+  width: 30px;
+}
+
+#countryCode option {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+  display: none;
+}
+
+.select2-container .select2-selection--single {
+  height: 30px;
+  width: 30px;
+}
+
+.select2-results__option {
+  width: auto;
+  white-space: normal;
+}
+
+.select2-container--open .select2-dropdown {
+  width: 180px !important;
+}
+
+.select2-results__option {
+  width: auto;
+  white-space: normal;
+}
+
+.select2-results__option img {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.select2-results__option span {
+  vertical-align: middle;
+}
+
+#toggle-password1, #toggle-password2 {
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  cursor: pointer;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.ModalContenido {
+  position: relative;
+  background-color: #000;
+  border: 3px solid #e98f25;
+  border-radius: 20px;
+  height: 90vh;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: -13vh;
+}
+
+.VentanaModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ContenedorLogin {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imgUsuario {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid #e98f25;
+}
+
+.imgUsuario:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.contenedorMenuLogin {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-color: #000;
+  width: 20vw;
+  border-left: 3px solid #e98f25;
+  border-right: 3px solid #e98f25;
+  transition: all 500ms;
+  transform: translateX(100%);
+  z-index: 999;
+}
+
+.CerrarMenu {
+  box-sizing: border-box;
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  top: 3vh;
+  left: 3vh;
+  cursor: pointer;
+}
+
+.CerrarMenu:hover {
+  box-sizing: border-box;
+  transform: scale(1.2);
+}
+
+.contenedorImgUsuario {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: calc(15vw + 6px);
+}
+
+.usuarioMenu {
+  box-sizing: border-box;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 3px solid #e98f25;
+}
+
+.contenedorNombre {
+  text-align: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 40px;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+  cursor: default;
+}
+
+.contenedorConfiguracion, .contenedorHistorial, .contenedorCerrarSesion {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 60px;
+  cursor: pointer;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+}
+
+.contenedorPuntos {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 60px;
+  cursor: default;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+}
+
+.configuracionCuenta:hover, .historialDePedidos:hover, .cerrarSesion:hover {
+  box-sizing: border-box;
+  transform: scale(1.2);
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=Restaurantes.css.map */

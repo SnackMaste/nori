@@ -1,0 +1,163 @@
+@use "../../Atoms/FontsSize/FontsSize.scss" as F;
+@use "../../Atoms/Colors/Colors.scss" as C;
+
+.infoRestauranteR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 3px solid C.$Border;
+}
+.infoRestauranteR select {
+    width: 200px;
+    height: 40px;
+    margin: auto 40px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: F.$FontSize4;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Primary;
+    border-radius: 3px;
+}
+.contenedorFormularioReserva{
+    background-color: C.$Primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 100px 0;
+}
+.infoReserva {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#NumPersonas {
+    width: 80px;
+    height: 40px;
+    margin: auto 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: F.$FontSize4;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Primary;
+    border-radius: 3px;
+}
+.tituloR {
+    margin: 40px auto;
+}
+#fechaReserva, #HoraReserva, #ocasion {
+    width: 160px;
+    height: 40px;
+    margin: auto 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: F.$FontSize4;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Primary;
+    border-radius: 3px;
+}
+.infoAdicionalReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ocasion {
+    display: flex;
+    margin: 0 25px;
+    align-items: center;
+}
+.otrosDatos textarea {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+}
+.otrosDatos div {
+    margin-bottom: 10px;
+}
+#Reservar {
+    padding: 10px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    font-size: F.$FontSize4;
+    background-color: C.$Border;
+    color: C.$Primary;
+    font-family: Primary;
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+.lineaSeparador {
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 3px solid C.$Border;
+}
+.tituloConfirmar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#ContenidoVentanaModalReserva {
+    padding: 0 20px 20px 20px;
+}
+#ContenidoVentanaModalReserva div {
+    margin: 10px 0;
+}
+#ContenidoVentanaModalReserva div.ConfirmarPaisCiudad div {
+    margin: 0 30px 0 0;
+}
+#ContenidoVentanaModalReserva div.ConfirmarInfoAdicional {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.ConfirmarBotones{
+    position: absolute;
+    bottom: 0px;
+    left: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ContenidoVentanaModalReserva div button {
+    padding: 10px 40px;
+    margin: 0 40px;
+    border: none;
+    font-size: F.$FontSize4;
+    background-color: C.$Border;
+    color: C.$Primary;
+    font-family: Primary;
+    cursor: pointer;
+}
+.ConfirmarImagen{
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+.imgRestauranteConfirmar {
+    width: 16vw;
+    height: 16vw;
+    border-radius: 4px;
+    border: 3px solid C.$Border;
+}
+.ConfirmarPaisCiudad{
+    display: flex;
+}
+.ConfirmarNombre{
+    width: 40vw;
+    height: 80px;
+    padding-top: 40px;
+}

@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Primary";
+  src: url("./primary.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parrafo";
+  src: url("./parrafo.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canji";
+  src: url("./canji.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Secundary";
+  src: url("./secundary.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estrella";
+  src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+.FontPromo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+}
+
+.FontPromoSub {
+  text-shadow: black 1px 1px, black 2px 2px, black 3px 3px, black 4px 4px, black 5px 5px, black 6px 6px, black 7px 7px, #000 0px 0px;
+  font-family: "Secundary";
+  color: #CECECE;
+}
+
+.FontPromoTitulo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+}
+
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontAni:hover {
+  animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 150vw;
+  }
+}
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontParrafo {
+  font-family: "Parrafo";
+  color: #e98f25;
+}
+
+.FontCanji {
+  font-family: "Canji";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontEstrella {
+  font-family: "Estrella";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 2px;
+}
+
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+.FontSecundary {
+  font-family: "Primary";
+  color: #000;
+}/*# sourceMappingURL=Fonts.css.map */

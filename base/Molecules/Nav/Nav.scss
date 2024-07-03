@@ -1,0 +1,69 @@
+/*
+------------------------------
+Menu de navegacion
+COMO USAR
+<nav class="Nav">
+    <a class="NavLink Opc1">
+        <div class="BtnNav">
+            <span class="FontAni">INICIO</span>
+        </div>
+    </a>
+    <a class="NavLink Opc2">
+        <div class="BtnNav">
+            <span class="FontAni">MENÚ</span>
+        </div>
+    </a>
+    <a class="NavLink Opc3">
+        <div class="BtnNav">
+            <span class="FontAni">RESERVA</span>
+        </div>
+    </a>
+    <a class="NavLink Opc4">
+        <img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+    </a>
+</nav>
+------------------------------
+*/
+.Nav {
+    display: flex;
+}
+.NavLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: absolute;
+}
+/*
+Posicion de las opciones iniciales
+*/
+.Opc4 {
+    right: 0;
+}
+.Opc3 {
+    right: 80px;
+}
+.Opc2 {
+    right: 200px;
+}
+.Opc1 {
+    right: 290px;
+}
+.Opc1, .Opc2, .Opc3 {
+    top: 10px;
+}
+/*
+posicion de las opciones con el efecto hover para que se vea centrado el efecto
+*/
+.Opc3:hover {
+    right: 75px;
+    top: 9px;
+}
+.Opc2:hover {
+    right: 195px;
+    top: 9px;
+}
+.Opc1:hover {
+    right: 285px;
+    top: 9px;
+}

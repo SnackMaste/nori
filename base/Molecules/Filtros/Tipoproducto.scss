@@ -1,0 +1,55 @@
+@use "../../Atoms/Colors/Colors.scss" as C;
+@use "../../Atoms/FontsSize/FontsSize.scss" as S;
+
+/*SELECT DE Tipoproducto*/
+.icon-selectTipoproducto {
+    height: 20px;
+    width: 20px;
+    transition: transform 0.2s 0s ease-in-out;
+}
+.select-containerTipoproducto{
+    width: 200px;
+    margin: 10px 20px;
+    padding: 0 20px;
+}
+.selectTipoproducto {
+
+    width: 200px;
+    position: relative;
+}
+.selected-optionTipoproducto {
+    display: flex;
+    justify-content: space-between;
+    background-color: C.$Primary;
+    border-radius: 20px;
+    border: solid 2px C.$Border;
+    cursor: pointer;
+}
+.select-valueTipoproducto,.icon-selectTipoproducto {
+    padding: 2px 10px;
+}
+.optionsTipoproducto {
+    position: absolute;
+    text-align: left;
+    background-color: C.$Primary;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px;
+    border: solid 2px C.$Border;
+    border-radius: 10px;
+    z-index: 2;
+}
+.optionsTipoproducto[data-tipoproducto="collapsedTipoproducto"] {
+    display: none;
+}
+.icon-selectTipoproducto[data-tipoproductoicon=""] {
+    transform: rotate(180deg);
+    transition: transform 0.2s 0s ease-in-out;
+}
+.optionTipoproducto {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.optionTipoproducto:hover {
+    background-color: C.$HoverSelect;
+}

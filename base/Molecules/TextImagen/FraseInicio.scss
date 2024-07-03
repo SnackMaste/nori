@@ -1,0 +1,38 @@
+@use "../../Atoms/Fonts/Fonts.scss" as F;
+@use "../../Atoms/FontsSize/FontsSize.scss" as S;
+@use "../../Atoms/Colors/Colors.scss" as C;
+
+/*
+-----------------------------------
+Frase de Inicio
+COMO USAR
+<div class="FraseInicio">
+        <img src="../Atoms/Img/palitos-sushi.jpg" alt="Sushi En Palitos" class="ImgFraseInicio">
+        <p class="TextFraseInicio"><span class="FontPrimary">El sabor del mar en tu paladar, no solo sushi, sino una aventura gastronómica.</span></p>
+    </div>
+-----------------------------------
+*/
+
+.FraseInicio {
+    background: C.$Primary;
+    width: 100%;
+    height: 300px;
+}
+.ImgFraseInicio {
+    display: block;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid C.$Border;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.TextFraseInicio {
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    top: -275px;
+    left: 600px;
+    font-size: S.$FontSize11;
+}

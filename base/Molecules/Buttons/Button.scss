@@ -1,0 +1,46 @@
+@use "../../Atoms/Colors/Colors.scss" as C;
+
+/*
+---------------------------------------
+Botones que contienen iconos y texto y un borde
+COMO USAR:
+<button class="BtnDownload">
+        <img src="../Atoms/Icons/google-play.png" alt="google-play">
+        <div class="FontAni">
+            <span class="FontSize3">Disponible en </span>
+            <span class="FontSize4">GOOGLE PLAY</span>
+        </div>
+    </button>
+---------------------------------------
+*/
+.BtnDownload {
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    border: solid 3px C.$Border;
+    border-radius: 20px;
+}
+.BtnDownload img {
+    display: block;
+    width: 25px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+.BtnDownload div {
+    position: relative;
+    top: -28px;
+    left: 15px;
+}
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnDownload:hover, .BtnMenu:hover {
+    transform: scale(1.1);
+    transform-origin: left;
+    cursor: pointer;
+    position: relative;
+    right: 5px;
+}

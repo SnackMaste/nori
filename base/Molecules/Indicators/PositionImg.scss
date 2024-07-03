@@ -1,0 +1,23 @@
+/*
+-------------------------------------------
+Indicador de la posicion de las imagenes en el carrucel
+COMO USAR
+<div class="PositionImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+        <img src="../Atoms/Icons/indicador.png" alt="Indicador" class="IndicadorImg">
+    </div>
+-------------------------------------------
+*/
+.PositionImg {
+    display: flex;
+}
+.IndicadorImg {
+    display: block;
+    width: 20px;
+    margin: 10px;
+}

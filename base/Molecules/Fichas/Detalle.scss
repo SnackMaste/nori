@@ -1,0 +1,33 @@
+@use "../../Atoms/Colors/Colors.scss" as C;
+.NombreProductoModal {
+    margin-top: 5vh;
+    text-align: center;
+}
+.DescripcionProducto {
+    margin-top: 10vh;
+    margin-left: 3vw;
+    width: 50%;
+}
+.ImgProductoModal {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 3vh;
+    position: absolute;
+    top: 25vh;
+    left: 60%;
+}
+.CantidadProducto {
+    margin-left: 3vw;
+    margin-top: 5vh;
+}
+.CerrarModal {
+    position: relative;
+    width: 3vh;
+    height: 3vh;
+    left:  96%;
+    top: 3vh;
+}
+.CerrarModal:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}

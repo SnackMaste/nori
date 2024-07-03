@@ -1,0 +1,8 @@
+@use "../../Molecules/Promos/Lunes/PromoLunes.scss";
+@use "../../Molecules/Promos/Martes/PromoMartes.scss";
+@use "../../Molecules/Promos/Miercoles/PromoMiercoles.scss";
+@use "../../Molecules/Indicators/PositionImg.scss";
+.Promos {
+    width: 100%;
+    height: 250px;
+}

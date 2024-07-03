@@ -1,0 +1,12 @@
+@use "../Atoms/FontsSize/FontsSize.scss";
+@use "../Atoms/Indicators/Indicators.scss";
+@use "../Atoms/Separaradores/Separadores.scss";
+@use "../Organisms/Header/Header.scss";
+@use "../Organisms/Footer/Footer.scss";
+@use "../Organisms/Filtro/Filtros.scss";
+@use "../Organisms/Fichas/Fichas.scss";
+@use "../Organisms/Fichas/VentanaModal.scss";
+@use "../Organisms/Header/HeaderLogin.scss";
+body {
+    margin: 0;
+}

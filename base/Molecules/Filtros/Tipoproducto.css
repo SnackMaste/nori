@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+/*SELECT DE Tipoproducto*/
+.icon-selectTipoproducto {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.select-containerTipoproducto {
+  width: 200px;
+  margin: 10px 20px;
+  padding: 0 20px;
+}
+
+.selectTipoproducto {
+  width: 200px;
+  position: relative;
+}
+
+.selected-optionTipoproducto {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  border-radius: 20px;
+  border: solid 2px #e98f25;
+  cursor: pointer;
+}
+
+.select-valueTipoproducto, .icon-selectTipoproducto {
+  padding: 2px 10px;
+}
+
+.optionsTipoproducto {
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 10px;
+  border: solid 2px #e98f25;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.optionsTipoproducto[data-tipoproducto=collapsedTipoproducto] {
+  display: none;
+}
+
+.icon-selectTipoproducto[data-tipoproductoicon=""] {
+  transform: rotate(180deg);
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+.optionTipoproducto {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.optionTipoproducto:hover {
+  background-color: #202020;
+}/*# sourceMappingURL=Tipoproducto.css.map */

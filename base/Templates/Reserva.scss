@@ -1,0 +1,10 @@
+@use "../Organisms/Header/Header.scss";
+@use "../Organisms/Footer/Footer.scss";
+@use "../Organisms/Fichas/VentanaModal.scss";
+@use "../Organisms/Header/HeaderLogin.scss";
+@use "../Organisms/Fichas/Fichas.scss";
+@use "../Molecules/Fichas/eventos.scss";
+@use "../Molecules/Fichas/FormReserva.scss";
+body {
+    margin: 0;
+}

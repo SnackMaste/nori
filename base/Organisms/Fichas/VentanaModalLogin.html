@@ -1,0 +1,148 @@
+<div class="VentanaModal" id="VentanaModalL">
+    <div class="ModalContenido">
+        <div class="ContenedorLogin">
+            <img src="/Atoms/Icons/cerrar.png" class="CerrarModal" id="CerrarModalL">
+            <div class="ContenidoLogin">
+                <div class="FondoLogin">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión y pide el mejor sushi<br/>de la ciudad</p>
+                    <button id="IniciarSesion" type="button">Iniciar Sesión</button>
+                </div>
+                <div class="FondoRegistro">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>¿Qué esperas para empezar a comer<br/>el mejor sushi de la ciudad?</p>
+                    <button id="Registrarse" type="button">Registrarse</button>
+                </div>
+            </div>
+            <div class="ContenedorFormularios">
+                <form action="" name="FormularioLogin" class="FormularioLogin" id="FormularioLogin">
+                    <h3><span class="FontPrimary">Iniciar Sesión <span class="FontPrimary" id="ComoE">Como Empresa</span></span></h3>
+                    <div class="BotonPersonaEmpresa" id="BotonPersonaEmpresaLogin">
+                        <button id="BtnPersonaLogin" type="button">Persona</button>
+                        <button id="BtnEmpresaLogin" type="button">Empresa</button>
+                    </div>
+                    <fieldset id="LoginPersona">
+                        <input type="text" placeholder="Identificacion" id="IdentificacionLogin">
+                        <input type="password" placeholder="Contraseña" id="ContraseñaP"><br/>
+                        <div class="Olvide">
+                            <a href="#">Olvide mi contraseña</a>
+                        </div>
+                        <p class="alerta" id="ErrorPNoExist">El usuario no esta registrado.</p>
+                        <p class="alerta" id="ErrorPLogin">La contraseña es incorrecta.</p>
+                        <div class="BotonFormulario">
+                            <button id="IngresarP" type="button">Ingresar</button>
+                        </div>
+                    </fieldset>
+                    <fieldset id="LoginEmpresa" disabled>
+                        <input type="text" placeholder="Identificacion Fiscal" id="IdentificacionFiscalLogin">
+                        <input type="password" placeholder="Contraseña" id="ContraseñaE"><br/>
+                        <div class="Olvide">
+                            <a href="#">Olvide mi contraseña</a>
+                        </div>
+                        <p class="alerta" id="ErrorENoExist">El usuario no esta registrado.</p>
+                        <p class="alerta" id="ErrorELogin">La contraseña es incorrecta.</p>
+                        <div class="BotonFormulario">
+                            <button id="IngresarE" type="button">Ingresar</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <form action="" class="FormularioRegistro" id="FormularioRegistro">
+                    <h3><span class="FontPrimary">Registrarse</span></h3>
+                    <div class="BotonPersonaEmpresa" id="BotonPersonaEmpresa">
+                        <button id="BtnPersona" type="button">Persona</button><button id="BtnEmpresa" type="button">Empresa</button>
+                    </div>
+                    <fieldset class="Persona" id="Persona">
+                        <div class="Legend">
+                            <legend>Datos Presonales</legend>
+                        </div>
+                        <div class="ContenedorAlerta">
+                        </div>
+                        <input type="text" placeholder="Identificacion" id="Identificacion">
+                        <input type="text" placeholder="Primer Nombre" id="Nombre1">
+                        <input type="text" placeholder="Segundo Nombre (Opcional)" id="Nombre2">
+                        <input type="text" placeholder="Primer Apellido" id="Apellido1">
+                        <input type="text" placeholder="Segundo Apellido (Opcional)" id="Apellido2">
+                        <div class="MensajeRegistro">Tenga en cuenta que esta Informacion es la que saldra en su factura,
+                        si es empresa, Realice el registro por empresa.</div>
+                        <p class="alerta" id="ErrorP">El usuario ya existe en la base de datos.</p>
+                        <div class="BotonFormulario">
+                            <button class="SiguienteDireccion" id="SiguienteDireccionPersona" type="button">Siguiente</button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Empresa" id="Empresa" disabled>
+                        <div class="Legend">
+                            <legend>Datos De la Empresa</legend>
+                        </div>
+                        <input type="text" placeholder="Identificacion Fiscal" id="IdentificacionFiscal">
+                        <input type="text" placeholder="Nombre de la Empresa" id="RazonSocial">
+                        <div class="MensajeRegistro">Tenga en cuenta que esta Informacion es la que saldra en su factura,
+                        si es empresa, Realice el registro por empresa.</div>
+                        <p class="alerta" id="ErrorE">El usuario ya existe en la base de datos.</p>
+                        <div class="BotonFormulario">
+                            <button class="SiguienteDireccion" id="SiguienteDireccionEmpresa" type="button">Siguiente</button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Direccion" id="Direccion" disabled>
+                        <div class="Legend">
+                            <legend>Datos Del Domicilio</legend>
+                        </div>
+                        <select name="PaisRegistro" id="PaisRegistro" onchange="recargaCiudadRegistro()">
+                        </select>
+                        <select name="" id="CiudadRegistro">
+                            <option value="" selected hidden>Ciudad</option>
+                        </select>
+                        <input type="text" placeholder="Nombre del Barrio" id="Barrio">
+                        <select name="" id="TipoCalleRegistro">
+                        </select>
+                        <input type="text" placeholder="Nombre de la Calle" id="CalleRegistro">
+                        <input type="text" placeholder="Numero de la Calle" id="NumCalleRegistro">
+                        <input type="text" placeholder="Torre" class="InputCorto" id="Torre">
+                        <input type="text" placeholder="Piso" class="InputCorto" id="Piso">
+                        <input type="text" placeholder="Puerta" class="InputCorto" id="Puerta">
+                        <div class="MensajeRegistro">Tenga en cuenta que esta Informacion es la que se utilizara para envio a Domicilio.</div>
+                        <div class="BotonFormulario">
+                            <button id="AtrasDireccion" type="button">Volver</button>
+                            <button id="SiguienteContacto" type="button">Siguiente</button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Contacto" id="Contacto" disabled>
+                        <div class="Legend">
+                            <legend>Datos Del Usuario</legend>
+                        </div>
+                        <div class="inputNumero">
+                            <div class="BanderaContenedor">
+                                <select name="countryCode" id="countryCode">
+                                    <option value="+56" data-image="/Atoms/Icons/chile.png">Chile (+56)</option>
+                                    <option value="+57" data-image="/Atoms/Icons/colombia.png"Colombia (+57)</option>
+                                    <option value="+593" data-image="/Atoms/Icons/ecuador.png">Ecuador (+593)</option>
+                                    <option value="+51" data-image="/Atoms/Icons/peru.png">Perú (+51)</option>
+                                    <option value="+58" data-image="/Atoms/Icons/venezuela.png">Venezuela (+58)</option>
+                                </select>
+                            </div>
+                            <div class="NumeroContenedor">
+                                <input type="number" placeholder="Celular"id="Telefono">
+                            </div>
+                        </div>
+                        <input type="email" placeholder="Correo Electronico" id="EmailR">
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="Contraseña" id="ContraseñaR">
+                            <i id="toggle-password1" class="fa fa-eye"></i>
+                        </div>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="Confirme la Contraseña" id="ConfirContraseñaR">
+                            <i id="toggle-password2" class="fa fa-eye"></i>
+                        </div>
+                        <div class="BotonFormulario">
+                            <button id="AtrasContacto" type="button">Volver</button>
+                            <button id="EnviarRegistro" type="button" >Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Organisms/Fichas/RecargaSelects.js"></script>
+<script src="/Solicitudes/almacenandoRegistro.js"></script>
+<script src="/Solicitudes/incioSesion.js"></script>
+<script src="/Solicitudes/banderas.js"></script>

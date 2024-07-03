@@ -1,0 +1,45 @@
+@use "../Colors/Colors.scss" as C;
+@use "../Fonts/Fonts.scss" as F;
+@use "../FontsSize/FontsSize.scss" as S;
+
+/*
+------------------------------------------
+Separador
+COMO USAR
+<div class="Separador"></div>
+------------------------------------------
+*/
+
+.Separador {
+    width: 100%;
+    height: 100px;
+    background-color: C.$Primary;
+    border-style: solid;
+    border-width: 3px 0;
+    border-image: C.$BorderImagen;
+}
+/*
+-------------------------------------------
+Separador que incluye texto dentro
+COMO USAR
+<div class="SeparadorConText">
+        <p class="TextSeparador">
+            <span class="FontPrimary">¿Quienes Somos?</span>
+        </p>
+    </div>
+-------------------------------------------
+*/
+.SeparadorConText {
+    width: 100%;
+    height: 150px;
+    background-color: C.$Primary;
+    border-style: solid;
+    border-width: 3px 0;
+    border-image: C.$BorderImagen;
+    text-align: center;
+    font-size: S.$FontSize11;
+}
+.TextSeparador {
+    position: relative;
+    top: 10px;
+}

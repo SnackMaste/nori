@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+/*
+---------------------------------------
+COMO USAR
+<div class="HistoriaR">
+        <h1 class="TitulosHistoriaR">
+            <span class="FontPrimary">Nori: el nacimiento de una idea</span>
+        </h1>
+        <p class="TextHistoriaRCorto">
+            <span class="FontPrimary">
+                Juan Camilo García Gómez siempre tuvo una pasión por la comida 
+                japonesa. Desde que viajó a Japón por primera vez y probó el sushi, 
+                quedó fascinado por los sabores y las texturas de esa cultura culinaria.
+            </span>
+                <br />
+                <br />
+            <span class="FontPrimary">
+                Al regresar a Colombia, se dio cuenta de que no había muchos lugares 
+                donde pudiera disfrutar de esa comida, y se le ocurrió una idea: 
+                crear su propia cadena de restaurantes de sushi, con un toque latinoamericano.
+            </span>
+        </p>
+        <img src="../Atoms/Img/establecimiento.png" alt="Restaurante por dentro" class="ImgHistoriaRTextCorto">
+        <h1 class="TitulosHistoriaR">
+            <span class="FontPrimary">Nori: los desafíos y los logros</span>
+        </h1>
+        <img src="../Atoms/Img/establecimiento.png" alt="Restaurante por dentro" class="ImgHistoriaRTextLargo">
+        <p class="TextHistoriaRLargo">
+            <span class="FontPrimary">
+                Así nació Nori, en el año 2015, en Bogotá. Juan Camilo se propuso 
+                ofrecer una experiencia gastronómica única, que combinara los ingredientes 
+                frescos y locales de su tierra con las técnicas y las recetas de 
+                la cocina japonesa. Su nombre, Nori, proviene de las algas que se 
+                usan para envolver el sushi, uno de sus platos estrella. Su logo, 
+                un salmón tomado por palillos en una taza de salsa de soja, representa 
+                la elegancia y la frescura que caracterizan su marca.
+            </span>
+                <br />
+                <br />
+            <span class="FontPrimary">
+                Pero no todo fue fácil para Juan Camilo. Al principio, tuvo que 
+                enfrentar el desconocimiento y la desconfianza de los clientes, 
+                que no estaban acostumbrados a ese tipo de comida. Para darse a conocer, 
+                organizó eventos de degustación y eventos japoneses, donde invitaba a las 
+                personas a probar su cocina y a aprender sobre su cultura. Poco 
+                a poco, fue ganando la fidelidad y el reconocimiento de los comensales, 
+                que quedaban encantados con el sabor y el servicio de Nori.
+            </span>
+        </p>
+        <h1 class="TitulosHistoriaR">
+            <span class="FontPrimary">Nori: la expansión y el crecimiento</span>
+        </h1>
+        <p class="TextHistoriaRCorto">
+            <span class="FontPrimary">
+                Nori no solo conquistó el paladar de los colombianos, sino también 
+                el de los peruanos, ecuatorianos, chilenos y venezolanos, donde se 
+                expandió con éxito y se posicionó como una opción preferida por los 
+                amantes de la comida japonesa y latina. Actualmente, cuenta con 
+                más de 50 locales en diferentes ciudades, y tiene planes de seguir 
+                creciendo y llegando a nuevos mercados.
+            </span>
+        </p>
+        <img src="../Atoms/Img/establecimiento.png" alt="Restaurante por dentro" class="ImgHistoriaRTextCorto">
+        <h1 class="TitulosHistoriaR">
+            <span class="FontPrimary">Nori: más que una cadena de restaurantes</span>
+        </h1>
+        <img src="../Atoms/Img/establecimiento.png" alt="Restaurante por dentro" class="ImgHistoriaRUltima">
+        <p class="TextHistoriaRUltimo">
+            <span class="FontPrimary">
+                Nori es más que una cadena de restaurantes, es una comunidad de 
+                personas que comparten el gusto por la buena comida y el buen 
+                servicio. Su misión es brindar a sus clientes una experiencia 
+                única e inolvidable, que los haga sentir como en casa. Nori es 
+                la fusión perfecta entre el sabor japonés y el amor del hogar con 
+                el toque latino. Nori es una explosión de sabor en el paladar.
+            </span>
+        </p>
+    </div>
+---------------------------------------
+*/
+/*
+--------------------------------
+Contenedor de la historia del restaurante
+--------------------------------
+*/
+.HistoriaR {
+  background: #000;
+  width: 100%;
+  height: 1725px;
+  margin-top: -25px;
+}
+
+/*
+------------------------------------
+Contenedores de los textos de la historia
+------------------------------------
+*/
+.TextHistoriaRCorto, .TextHistoriaRLargo, .TextHistoriaRUltimo {
+  width: 700px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.TextHistoriaRCorto {
+  height: 100px;
+  position: relative;
+  left: 40px;
+  top: 80px;
+}
+
+.TextHistoriaRLargo {
+  height: 200px;
+  position: relative;
+  left: 500px;
+  top: -250px;
+  margin-bottom: -150px;
+}
+
+.TextHistoriaRUltimo {
+  position: relative;
+  left: 500px;
+  top: -250px;
+  margin-bottom: -150px;
+  margin-top: 90px;
+}
+
+/*
+-----------------------------
+Imagenes de la historia del restaurante
+-----------------------------
+*/
+.ImgHistoriaRTextCorto {
+  display: block;
+  width: 400px;
+  border-radius: 120px;
+  border: solid 4px #e98f25;
+  position: relative;
+  left: 780px;
+}
+
+.ImgHistoriaRUltima, .ImgHistoriaRTextLargo {
+  display: block;
+  width: 400px;
+  border-radius: 120px;
+  border: solid 4px #e98f25;
+  position: relative;
+  left: 40px;
+}
+
+.ImgHistoriaRTextCorto {
+  top: -120px;
+  margin-bottom: -150px;
+}
+
+.ImgHistoriaRTextLargo {
+  top: 50px;
+}
+
+.ImgHistoriaRUltima {
+  top: 20px;
+}
+
+/*
+---------------------------------
+Titulos de las historias de los restaurantes
+---------------------------------
+*/
+.TitulosHistoriaR {
+  padding-top: 50px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+}/*# sourceMappingURL=HistoriaRestaurante.css.map */

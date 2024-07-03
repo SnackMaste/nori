@@ -1,0 +1,104 @@
+.imgUsuario {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid #e98f25;
+}
+
+.imgUsuario:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.contenedorMenuLogin {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-color: #000;
+  width: 20vw;
+  border-left: 3px solid #e98f25;
+  border-right: 3px solid #e98f25;
+  transition: all 500ms;
+  transform: translateX(100%);
+  z-index: 999;
+}
+
+.CerrarMenu {
+  box-sizing: border-box;
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  top: 3vh;
+  left: 3vh;
+  cursor: pointer;
+}
+
+.CerrarMenu:hover {
+  box-sizing: border-box;
+  transform: scale(1.2);
+}
+
+.contenedorImgUsuario {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: calc(15vw + 6px);
+}
+
+.usuarioMenu {
+  box-sizing: border-box;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 3px solid #e98f25;
+}
+
+.contenedorNombre {
+  text-align: center;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 40px;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+  cursor: default;
+}
+
+.contenedorConfiguracion, .contenedorHistorial, .contenedorCerrarSesion {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 60px;
+  cursor: pointer;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+}
+
+.contenedorPuntos {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 60px;
+  cursor: default;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  border-bottom: 2px solid #e98f25;
+}
+
+.configuracionCuenta:hover, .historialDePedidos:hover, .cerrarSesion:hover {
+  box-sizing: border-box;
+  transform: scale(1.2);
+}/*# sourceMappingURL=HeaderLogin.css.map */

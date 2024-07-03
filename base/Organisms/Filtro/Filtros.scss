@@ -1,0 +1,41 @@
+@use "../../Molecules/Filtros/Pais.scss";
+@use "../../Molecules/Filtros/Ciudad.scss";
+@use "../../Molecules/Filtros/Tipoproducto.scss";
+@use "../../Molecules/Filtros/Tamaño.scss";
+@use "../../Molecules/Filtros/Valoracion.scss";
+@use  "../../Atoms/Colors/Colors.scss" as C;
+@use "../../Atoms/FontsSize/FontsSize.scss" as S;
+.Filtro-container{
+    width: 100%;
+    height: 150px;
+    background-color: C.$Primary;
+    border-bottom: solid 3px transparent;
+    border-image: C.$BorderImagen;
+    text-align: center;
+}
+.DosFiltros {
+    width: 600px;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: calc(50% - 300px);
+}
+.TresFiltros {
+    width: 800px;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: calc(50% - 400px);
+}
+.TituloFiltro {
+    font-size: S.$FontSize10;
+    padding-top: 25px;
+}
+.prueba {
+    display: block;
+    height: 15px;
+}

@@ -1,0 +1,25 @@
+@use "../../../Atoms/Colors/Colors.scss" as C;
+
+/*
+-------------------------------
+COMO USAR
+        <img src="../Atoms/Img/Martes.png" alt="" class="PromoMartes">
+        <p class="TextPromoMartes">
+            <span class="FontPromoTitulo">MARTES</span>
+            </br>
+            </br>
+            <span class="FontPromo">¡Refresca tu paladar! Disfruta de una bebida gratis con la compra de una bandeja de sushi. Elige entre té verde, limonada o gaseosa.</span>
+        </p>
+    </div>
+-------------------------------
+*/
+.PromoMartes {
+    width: 100%;
+}
+.TextPromoMartes {
+    width: 700px;
+    text-align: center;
+    position: relative;
+    top: -270px;
+    left: 550px;
+}

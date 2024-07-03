@@ -1,0 +1,43 @@
+@use "../Colors/Colors.scss" as C;
+@use "../Fonts/Fonts.scss" as F;
+@use "../FontsSize/FontsSize.scss" as S;
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta abierto
+-----------------------------------------
+*/
+.ABIERTO {
+    width: 100px;
+    height: 22px;
+    border: solid 3px C.$Border;
+    border-radius: 20px;
+    background-color: C.$Open;
+    @include F.FontSecundary;
+    font-size: S.$FontSize5;
+    text-align: center;
+    padding: 0;
+}
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta cerrado
+-----------------------------------------
+*/
+.CERRADO {
+    width: 100px;
+    height: 22px;
+    border: solid 3px C.$Border;
+    border-radius: 20px;
+    background-color: C.$Closed;
+    @include F.FontSecundary;
+    font-size: S.$FontSize5;
+    text-align: center;
+    padding: 0;
+}
+.ContadorProductos {
+    width: 30px;
+    height: 30px;
+    background-color: C.$Primary;
+    border: 2px solid C.$Border;
+    border-radius: 50%;
+    text-align: center;
+}

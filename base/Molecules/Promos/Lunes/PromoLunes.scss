@@ -1,0 +1,86 @@
+@use "../../../Atoms/Colors/Colors.scss" as C;
+
+/*
+------------------------------
+COMO USAR
+<div class="PromoLunes">
+        <div class="ImgLunesIzquierda">
+            <img src="../Atoms/Img/PromoLunesSushi1.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi1">
+            <img src="../Atoms/Img/PromoLunesSushi2.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi2">
+            <img src="../Atoms/Img/PromoLunesSushi3.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi3">
+        </div>
+        <div>
+            <p class="TextPromoLunes"><span class="FontPromoTitulo"> LUNES:  2 x 1 </span>
+            </br>
+            </br>
+            <span class="FontPromo">¡Doble sabor, doble placer! Llévate dos rollos de salmón y aguacate por el precio de uno y disfruta del mejor sushi de la región.</span></p>
+        </div>
+        <div class="ImgLunesDerecha">
+            <img src="../Atoms/Img/PromoLunesSushi4.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi4">
+            <img src="../Atoms/Img/PromoLunesSushi5.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi5">
+            <img src="../Atoms/Img/PromoLunesSushi6.png" alt="Rollo sushi con salmon y aguacate" class="Lunes Sushi6">
+        </div>
+    </div>
+*/
+/*
+--------------------------
+Fondo lunes
+--------------------------
+*/
+.PromoLunes {
+    background: C.$Promo;
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+/*
+---------------------------
+agrupacion de las imagenes lunes
+---------------------------
+*/
+.ImgLunesIzquierda {
+    position: relative;
+    padding-top: 20px;
+    left: 25px;
+    top: 25px;
+    width: 250px;
+}
+.ImgLunesDerecha {
+    position: relative;
+    padding-top: 20px;
+    top: 25px;
+    left: 30px;
+    width: 250px;
+}
+/*
+------------------------------
+ubicacion de las imagenes de lunes
+------------------------------
+*/
+.Sushi1, .Sushi4 {
+    position: relative;
+    left: 80px;
+}
+.Sushi2, .Sushi5{
+    position: relative;
+    top: 85px;
+    left: -80px;
+}
+.Sushi3, .Sushi6 {
+    position: relative;
+    left: 140px;
+    top: 20px;
+}
+/*
+--------------------
+Texto de la promo lunes
+----------------------
+*/
+.TextPromoLunes {
+    position: relative;
+    left: 15px;
+    width: 725px;
+    height: 200px;
+    text-align: center;
+    margin: 0 40px;
+}

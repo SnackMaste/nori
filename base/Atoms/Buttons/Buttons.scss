@@ -1,0 +1,64 @@
+@use "../Fonts/Fonts.scss" as F;
+@use "../Colors/Colors.scss" as C;
+@use "../FontsSize/FontsSize.scss" as S;
+/*
+-----------------------------------------------
+BOTON MENU
+COMO USAR
+<button class="BtnMenu"><span class="FontAni">Ver Menú</span></button>
+-----------------------------------------------
+*/
+.BtnMenu {
+    width: 100px;
+    height: 30px;
+    background: C.$Menu;
+    font-size: S.$FontSize5;
+    border: solid 3px;
+    border-color: C.$Border;
+    border-radius: 20px;
+}
+/*
+--------------------------------------
+Botones que son solo letras
+COMO USAR:
+<div class="BtnNav"><span class="FontAni">INICIO</span></div>
+--------------------------------------
+*/
+.BtnNav {
+    font-size: S.$FontSize5;
+}
+/*
+---------------------------------------
+Botones que son solo iconos
+COMO USAR: 
+<img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+---------------------------------------
+*/
+.BtnIcons {
+    display: block;
+    width: 40px;
+}
+
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnNav:hover {
+    font-size: S.$FontSize6;
+    margin-left: -5px;
+    cursor: pointer;
+    transform-origin: center center;
+}
+.BtnIcons:hover {
+    animation: rotationIcon 0.5s forwards;
+    cursor: pointer;
+}
+@keyframes rotationIcon {
+    from {
+        transform: scale(1.1) rotate(0deg);
+    }
+    to {
+        transform: scale(1.1) rotate(360deg);
+    }
+}

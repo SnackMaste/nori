@@ -1,0 +1,31 @@
+@use "../../Atoms/FontsSize/FontsSize.scss" as F;
+@use "../../Atoms/Colors/Colors.scss" as C;
+@use "../../Atoms/Separaradores/Separadores.scss";
+.imgEvento {
+    width: 40vw;
+    margin: auto;
+}
+.tituloEvento {
+    font-size: F.$FontSize12;
+    text-align: center;
+    margin: 40px auto;
+}
+.descripcionEvento{
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+}
+.evento {
+    width: 80vw;
+    border-bottom: 3px solid C.$Border;
+}
+.cumpleaños {
+    border: none;
+}
+.contenedorImagenE {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}

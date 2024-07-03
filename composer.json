@@ -1,0 +1,20 @@
+{
+    "name": "snack/nori",
+    "description": "Nori es un apasionante restaurante de sushi con sedes en cinco países de América Latina. Nuestros restaurantes están ubicados en diversas ciudades, desde las playas soleadas hasta las montañas majestuosas. Lo que nos hace únicos es nuestro toque latino en el sushi: fusionamos los sabores tradicionales japoneses con ingredientes y sazones auténticos de la región. Imagina un rollo de sushi con aguacate, mango y ají picante, o nigiri con ceviche de pescado fresco. ¡Una experiencia culinaria que te transportará a dos mundos a la vez!. Por supuesto, debemos aclarar que Nori es un restaurante ficticio creado exclusivamente para fines educativos en esta plataforma. Pero si alguna vez encuentras un lugar similar en la vida real, ¡no dudes en probarlo!",
+    "type": "library",
+    "license": "Licencia Propietaria",
+    "autoload": {
+        "psr-4": {
+            "Snack\\Nori\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Snack Master"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

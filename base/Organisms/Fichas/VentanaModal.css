@@ -1,0 +1,427 @@
+@charset "UTF-8";
+.NombreProductoModal {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.DescripcionProducto {
+  margin-top: 10vh;
+  margin-left: 3vw;
+  width: 50%;
+}
+
+.ImgProductoModal {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 3vh;
+  position: absolute;
+  top: 25vh;
+  left: 60%;
+}
+
+.CantidadProducto {
+  margin-left: 3vw;
+  margin-top: 5vh;
+}
+
+.CerrarModal {
+  position: relative;
+  width: 3vh;
+  height: 3vh;
+  left: 96%;
+  top: 3vh;
+}
+
+.CerrarModal:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+.ContenidoLogin {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-image: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  opacity: 0.5;
+}
+
+.ContenidoLogin div {
+  margin: 80px 40px;
+  color: #000;
+  transition: all 500ms;
+}
+
+.ContenidoLogin div p,
+.ContenidoLogin div button {
+  margin-top: 30px;
+  font-family: Secundary;
+  border-radius: 3px;
+}
+
+.ContenidoLogin h3 {
+  font-family: Primary;
+  font-size: 18px;
+}
+
+.ContenidoLogin button {
+  padding: 5px 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #000;
+  font-size: 14px;
+  outline: none;
+  transition: all 300ms;
+  border-radius: 3px;
+}
+
+.ContenidoLogin button:hover {
+  background-color: #000;
+  color: #e98f25;
+}
+
+/*FORMULARIOS*/
+.ContenedorFormularios {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 15px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ContenedorFormularios form {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 20px;
+  border: 3px solid #e98f25;
+}
+
+.ContenedorFormularios h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  font-size: 22px;
+}
+
+.ContenedorFormularios legend {
+  border: none;
+  font-size: 14px;
+  font-family: Primary;
+  color: #e98f25;
+}
+
+.ContenedorFormularios fieldset {
+  border: none;
+}
+
+.ContenedorFormularios input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Primary;
+}
+
+.Olvide {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ContenedorFormularios div a {
+  text-decoration: none;
+  color: #e98f25;
+  font-size: 12px;
+  font-family: Secundary;
+}
+
+.BotonFormulario {
+  display: flex;
+  justify-content: center;
+}
+
+.ContenedorFormularios form div button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: #e98f25;
+  color: #000;
+  font-family: Primary;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.MensajeRegistro {
+  color: #e98f25;
+  font-size: 10px;
+  font-family: Primary;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.FormularioLogin {
+  opacity: 1;
+  display: block;
+}
+
+.FormularioRegistro {
+  display: none;
+  position: absolute;
+  top: -275px;
+  transition: all 300ms;
+}
+
+.CerrarModal {
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  left: 96%;
+  top: 3vh;
+}
+
+.ContenedorFormularios input.InputCorto {
+  width: 31%;
+}
+
+.ContenedorFormularios select {
+  width: 45%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Primary;
+  cursor: pointer;
+}
+
+.ContenedorFormularios option {
+  font-family: Primary;
+  cursor: pointer;
+}
+
+.BotonPersonaEmpresa, .BotonPersonaEmpresaLogin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#BtnPersona, #BtnEmpresa, #BtnPersonaLogin, #BtnEmpresaLogin {
+  margin: auto 10px;
+  width: 40%;
+  margin-left: 10px;
+}
+
+#AtrasDatosPersonales, #AtrasDireccion {
+  margin-right: 10px;
+}
+
+#SiguienteContacto, #EnviarRegistro {
+  margin-left: 10px;
+}
+
+.Empresa {
+  display: none;
+}
+
+.Legend {
+  display: flex;
+  justify-content: center;
+}
+
+.alerta {
+  display: none;
+  color: #f50039;
+  font-family: Primary;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 100;
+}
+
+#Empresa {
+  display: none;
+}
+
+#Direccion {
+  display: none;
+}
+
+#Contacto {
+  display: none;
+}
+
+.img-flag {
+  width: 30px;
+  margin-left: -10px;
+  margin-top: -2px;
+}
+
+.inputNumero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.BanderaContenedor, .NumeroContenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NumeroContenedor {
+  width: calc(100% - 40px);
+}
+
+.BanderaContenedor {
+  padding-top: 10px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#countryCode {
+  width: 30px;
+}
+
+#countryCode option {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+  display: none;
+}
+
+.select2-container .select2-selection--single {
+  height: 30px;
+  width: 30px;
+}
+
+.select2-results__option {
+  width: auto;
+  white-space: normal;
+}
+
+.select2-container--open .select2-dropdown {
+  width: 180px !important;
+}
+
+.select2-results__option {
+  width: auto;
+  white-space: normal;
+}
+
+.select2-results__option img {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.select2-results__option span {
+  vertical-align: middle;
+}
+
+#toggle-password1, #toggle-password2 {
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  cursor: pointer;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.ModalContenido {
+  position: relative;
+  background-color: #000;
+  border: 3px solid #e98f25;
+  border-radius: 20px;
+  height: 90vh;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: -13vh;
+}
+
+.VentanaModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ContenedorLogin {
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=VentanaModal.css.map */

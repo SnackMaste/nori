@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parrafo";
+  src: url("https://fonts.gstatic.com/s/archivonarrow/v30/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1iXlw398pJxk.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canji";
+  src: url("https://fonts.gstatic.com/s/newtegomin/v10/SLXMc1fV7Gd9USdBAfPlqfN0Q3ptkDMN.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Secundary";
+  src: url("https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k736J_B-i2yQag0-mac3OFiXMFuOLlNldbw.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estrella";
+  src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+.FontPromo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 30px;
+}
+
+.FontPromoTitulo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 40px;
+}
+
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontAni:hover {
+  animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 150vw;
+  }
+}
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontParrafo {
+  font-family: "Parrafo";
+  color: #e98f25;
+}
+
+.FontCanji {
+  font-family: "Canji";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontEstrella {
+  font-family: "Estrella";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 2px;
+}
+
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+.FontSecundary {
+  font-family: "Primary";
+  color: #000;
+}
+
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta abierto
+-----------------------------------------
+*/
+.ABIERTO {
+  width: 100px;
+  height: 22px;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+  background-color: #00f552;
+  font-family: "Primary";
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+}
+
+/*
+-----------------------------------------
+Indicador de que el establecimiento esta cerrado
+-----------------------------------------
+*/
+.CERRADO {
+  width: 100px;
+  height: 22px;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+  background-color: #f50039;
+  font-family: "Primary";
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
+}
+
+.ContadorProductos {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #e98f25;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.NumeroProductos {
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.CarritoCompras {
+  z-index: 10;
+  position: fixed;
+  top: 75vh;
+  right: 10vh;
+  height: 120px;
+}
+
+.ImgCarrito {
+  position: relative;
+  top: -60px;
+  display: block;
+  width: 100px;
+  z-index: 8;
+}
+
+.CarritoCompras:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.ContadorProductos {
+  position: relative;
+  top: -10px;
+  left: 50px;
+  z-index: 9;
+}
+
+.TotalPrecioProductos {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  z-index: 9;
+}
+
+.TablaPedido thead tr th {
+  padding: 5px 5px;
+  height: 30px;
+}
+
+.nombreProductoPedido {
+  width: 250px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid #e98f25;
+  text-align: center;
+}
+
+.cantidadProductoPedido {
+  width: 20px;
+}
+
+.valorUniProcuctoPedido {
+  width: 100px;
+}
+
+.valorProductoPedido {
+  width: 100px;
+}
+
+.quitarProductoPedido {
+  width: 20px;
+}
+
+.agregarProductoPedido {
+  width: 20px;
+}
+
+.eliminarProductoPedido {
+  width: 20px;
+}
+
+.IcoBasura {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.ContenedorTablaPedido {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.TituloPedido {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.TablaPedido tbody tr td {
+  height: 30px;
+}
+
+.Total {
+  width: 70%;
+}
+
+.ValorAPagar {
+  width: 30%;
+}
+
+.ContenedorTablaTotal {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.ContenedorBotones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ContenedorBotones button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: #e98f25;
+  color: #000;
+  font-family: Primary;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 20px;
+  width: 200px;
+}
+
+.TituloPedido input {
+  margin-left: 30px;
+}
+
+#CantidadPuntos {
+  width: 50px;
+  margin: auto 20px;
+}
+
+.CantidadPuntos {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnAceptarPuntos:hover {
+  margin-right: -5.5px;
+}
+
+/*-------Tipo Pedido*/
+.TituloConMargen {
+  margin-top: 30px;
+}
+
+.formDireDomi {
+  margin-left: 5vw;
+}
+
+.DireCliente, .DireNueva {
+  display: flex;
+  margin-top: 40px;
+}
+
+.DireNueva {
+  margin-bottom: 8.6px;
+}
+
+.DireCliente fieldset, .DireNueva fieldset {
+  display: flex;
+  border: none;
+}
+
+.DireCliente fieldset div {
+  margin-right: 5vw;
+}
+
+.DireCliente fieldset div div, .DireNueva fieldset div {
+  margin: auto 10px;
+}
+
+.rellenoRecoger {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensajeCiudad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+/*metodo de pago*/
+.logoTarjetas {
+  width: 5vw;
+}
+
+.contenedorLogosTarjetas {
+  display: flex;
+  position: absolute;
+  left: 25vw;
+}
+
+.contenedorInfoTarjeta {
+  margin: 4vw 6vh;
+  display: flex;
+  position: relative;
+}
+
+.imgTarjeta {
+  width: 20vw;
+  border-radius: 1vw;
+}
+
+.cvv {
+  color: black;
+  position: absolute;
+  left: 9vw;
+  top: 13.5vh;
+  display: none;
+}
+
+.numeroTarjeta1, .numeroTarjeta2, .numeroTarjeta3, .numeroTarjeta4 {
+  color: white;
+  position: absolute;
+  top: 15.5vh;
+}
+
+.numeroTarjeta1 {
+  left: 3vw;
+}
+
+.numeroTarjeta2 {
+  left: 7vw;
+}
+
+.numeroTarjeta3 {
+  left: 11vw;
+}
+
+.numeroTarjeta4 {
+  left: 15vw;
+}
+
+.caducidad {
+  color: white;
+  position: absolute;
+  left: 6.5vw;
+  top: 23vh;
+}
+
+.nombreTitular {
+  color: white;
+  position: absolute;
+  left: 1vw;
+  top: 26vh;
+}
+
+.contenedorFormularioTarjeta {
+  text-align: center;
+  padding-left: 5vw;
+  padding-top: 2vh;
+}
+
+.ContenedorNumeroTar {
+  margin-bottom: 10px;
+}
+
+.inputNumTar {
+  width: 6vw;
+  margin: 10px 10px;
+}
+
+.validaHastaTitulo {
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+.cvvinput {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.selectCvv {
+  width: 4vw;
+  margin-top: 10px;
+}
+
+.inputCvv {
+  width: 4vw;
+  margin: 20px 10px;
+  margin-left: 40px;
+}
+
+#Pago {
+  width: 30vw;
+  position: absolute;
+  top: -5vh;
+  left: 20vw;
+}
+
+#validando {
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  width: 40vw;
+}
+
+#fondoValidando {
+  position: absolute;
+  top: -50vh;
+  left: -50vw;
+  width: 200%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contenedorValidando {
+  display: none;
+}/*# sourceMappingURL=Carrito.css.map */

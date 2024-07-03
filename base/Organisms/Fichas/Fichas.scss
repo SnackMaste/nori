@@ -1,0 +1,16 @@
+@use "../../Molecules/Fichas/Restaurantes.scss";
+@use "../../Molecules/Fichas/Producto.scss";
+@use "../../Atoms/Colors/Colors.scss" as C;
+.Fichas {
+    background-color: C.$Primary;
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.relleno {
+    width: 100%;
+    height: 50vh;
+    background-color: C.$Primary;
+}

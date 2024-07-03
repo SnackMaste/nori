@@ -1,0 +1,52 @@
+@use "../../Atoms/Colors/Colors.scss" as C;
+@use "../../Atoms/FontsSize/FontsSize.scss" as S;
+@use "../../Atoms/Buttons/Buttons.scss";
+@use "../../Atoms/Indicators/Indicators.scss";
+@use "../../Molecules/Buttons/Calificaciones.scss";
+
+.Restaurantes {
+    width: calc(100% - 90px);
+    height: 250px;
+    background-color: C.$Primary;
+    border: 3px solid C.$Border;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+}
+.ImgRestaurante {
+    height: calc(100% - 16px);
+    display: block;
+    border: 2px solid C.$Border;
+    border-radius: 10px;
+    margin: 6px 25px;
+}
+.InfoRestaurante {
+    height: 100%;
+    width: 600px;
+    text-align: center;
+}
+.IconTelefonoR {
+    padding-top: 15px;
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+.TelefonoRestaurante {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.BtnRestaurante {
+    width: 200px;
+    justify-content: center;
+}
+.ABIERTO, .CERRADO {
+    margin: 20px auto 40px;
+}
+.BtnMenu {
+    margin: 40px calc(50% - 50px) 20px;
+}
+.BtnEstrellasRestaurante {
+    margin: 20px auto 40px;
+}

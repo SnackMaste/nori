@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Atoms/Icons/NORI-2.0.ico">
+    <title>NORI | Menú</title>
+    <link rel="stylesheet" href="/Templates/Menu.css" type="text/css">
+    <link rel="stylesheet" href="/Atoms/Fonts/Fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div id="header"></div>
+    <!--FILTROS-->
+    <section class="Filtro-container">
+        <div class="TituloFiltro">
+            <span class="FontPrimary">Menú</span>
+        </div>
+        <!--FILTRO DE TIPO DE PRODUCTO-->
+        <div class="TresFiltros">
+            <div class="select-conatinerTipoproducto">
+                <div class="selectTipoproducto">
+                    <div class="selected-optionTipoproducto">
+                        <span class="FontPrimary FontSize5"><span class="select-valueTipoproducto">Tipo De Plato</span></span>
+                        <img data-tipoproductoicon="rotateTipoproducto" src="/Atoms/Icons/desplegable.ico" alt="" class="icon-selectTipoproducto">
+                    </div>
+                    <div data-tipoproducto="collapsedTipoproducto" class="optionsTipoproducto">
+                        <div class="optionDefect"><span class="FontPrimary FontSize5">TIPO DE PLATO</span></div>
+                        <div class="optionTipoproducto"><span class="FontPrimary FontSize5">Individual</span></div>
+                        <div class="optionTipoproducto"><span class="FontPrimary FontSize5">Bebida</span></div>
+                        <div class="optionTipoproducto"><span class="FontPrimary FontSize5">Postre</span></div>
+                        <div class="optionTipoproducto"><span class="FontPrimary FontSize5">Combo</span></div>
+                    </div>
+                    <script src="/Molecules/Filtros/Tipoproducto.js"></script>
+                </div>
+            </div>
+            <!--FILTRO DE TAMAÑO-->
+            <div class="select-conatinerTamaño">
+                <div class="selectTamaño">
+                    <div class="selected-optionTamaño">
+                        <span class="FontPrimary FontSize5"><span class="select-valueTamaño">Tamaño</span></span>
+                        <img data-tamañoicon="rotateTamaño" src="/Atoms/Icons/desplegable.ico" alt="" class="icon-selectTamaño">
+                    </div>
+                    <div data-tamaño="collapsedTamaño" class="optionsTamaño">
+                        <div class="optionDefect"><span class="FontPrimary FontSize5">TAMAÑO</span></div>
+                        <div class="optionTamaño"><span class="FontPrimary FontSize5">Mini</span></div>
+                        <div class="optionTamaño"><span class="FontPrimary FontSize5">Personal</span></div>
+                        <div class="optionTamaño"><span class="FontPrimary FontSize5">Mediano</span></div>
+                        <div class="optionTamaño"><span class="FontPrimary FontSize5">Grande</span></div>
+                    </div>
+                    <script src="/Molecules/Filtros/Tamaño.js"></script>
+                </div>
+            </div>
+            <!--FILTRO DE VALORACION-->
+            <div class="select-conatinerValoracion">
+                <div class="selectValoracion">
+                    <div class="selected-optionValoracion">
+                        <span class="FontEstrella FontSize5"><span class="select-valueValoracion"><span class="FontPrimary FontSize5">Valoracion</span></span></span>
+                        <img data-valoracionicon="rotateValoracion" src="/Atoms/Icons/desplegable.ico" alt="" class="icon-selectValoracion">
+                    </div>
+                    <div data-valoracion="collapsedValoracion" class="optionsValoracion">
+                        <div class="optionDefect"><span class="FontPrimary FontSize5">VALORACION</span></div>
+                        <div class="optionValoracion"><span class="FontEstrella FontSize7">«</span></div>
+                        <div class="optionValoracion"><span class="FontEstrella FontSize7">« «</span></div>
+                        <div class="optionValoracion"><span class="FontEstrella FontSize7">« « «</span></div>
+                        <div class="optionValoracion"><span class="FontEstrella FontSize7">« « « «</span></div>
+                        <div class="optionValoracion"><span class="FontEstrella FontSize7">« « « « «</span></div>
+                    </div>
+                    <script src="/Molecules/Filtros/Valoracion.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Carrito de compras-->
+    <div class="CarritoCompras" id="CarritoCompras">
+        <div class="ContadorProductos">
+            <p id="contadorProductos" class="FontPrimary NumeroProductos FontSize3">0</p>
+        </div>
+        <div class="TotalPrecioProductos">
+            <p id="totalPrecioProductos" class="FontPrimary FontSize2">$0</p>
+        </div>
+        <img src="/Atoms/Icons/carrito.png" alt="" class="ImgCarrito">
+    </div>
+    <!--Fichas de los productos-->
+    <section class="Fichas" id="FichasM">
+        <div class="relleno" id="rellenoM"></div>
+    </section>
+    <!--FOOTER-->
+    <div id="footer"></div>
+    <div id="ventanaModalLogin"></div>
+    <div id="incluir"></div>
+    <script src="/Solicitudes/session.js"></script>
+    <div class="modal" id="modal"></div>
+    <script src="/Solicitudes/menu.js"></script>
+    <script src="/Solicitudes/detalle.js"></script>
+    <div class="VentanaModal" id="VentanaModalC">
+        <div class="ModalContenido" id="ContenidoPedidoModal">
+        </div>
+    </div>
+    <script src="/Solicitudes/Pedido.js"></script>
+    <script src="/Solicitudes/tipoDeEntrega.js"></script>
+    <script src="/Solicitudes/metodoPago.js"></script>
+</body>

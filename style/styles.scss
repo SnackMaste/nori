@@ -1,0 +1,51 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+.logo{
+    width: 6vw;
+    min-width: 70px;
+}
+.rem2-3{
+    font-size: 2.3rem;
+}
+.bg-gradient-img{
+    background-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%);
+}
+.border-img-b{
+    border-bottom: solid 0.5vh;
+    border-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%)1;
+}
+.border-img-t{
+    border-top: solid 0.5vh;
+    border-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%)1;
+}
+.border-img-y{
+    border-top: solid 0.5vh;
+    border-bottom: solid 0.5vh;
+    border-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%)1;
+}
+.boton-ico{
+    width: 2vw;
+    min-width: 45px;
+}
+.boton-ico-ani{
+    width: 2vw;
+    min-width: 45px;
+    transition: transform 0.5s ease;
+}
+.boton-ico-ani:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+.boton-close{
+    width: 2vw;
+    height: 2vw;
+    min-width: 20px;
+    min-height: 20px;
+}
+.max-width-50{
+max-width: 50vw;
+}
+.min-height{
+    height: 300px;
+    width: 100%;
+}
+

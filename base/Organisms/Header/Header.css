@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/*
+------------------------------
+Menu de navegacion
+COMO USAR
+<nav class="Nav">
+    <a class="NavLink Opc1">
+        <div class="BtnNav">
+            <span class="FontAni">INICIO</span>
+        </div>
+    </a>
+    <a class="NavLink Opc2">
+        <div class="BtnNav">
+            <span class="FontAni">MENÚ</span>
+        </div>
+    </a>
+    <a class="NavLink Opc3">
+        <div class="BtnNav">
+            <span class="FontAni">RESERVA</span>
+        </div>
+    </a>
+    <a class="NavLink Opc4">
+        <img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+    </a>
+</nav>
+------------------------------
+*/
+.Nav {
+  display: flex;
+}
+
+.NavLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+/*
+Posicion de las opciones iniciales
+*/
+.Opc4 {
+  right: 0;
+}
+
+.Opc3 {
+  right: 80px;
+}
+
+.Opc2 {
+  right: 200px;
+}
+
+.Opc1 {
+  right: 290px;
+}
+
+.Opc1, .Opc2, .Opc3 {
+  top: 10px;
+}
+
+/*
+posicion de las opciones con el efecto hover para que se vea centrado el efecto
+*/
+.Opc3:hover {
+  right: 75px;
+  top: 9px;
+}
+
+.Opc2:hover {
+  right: 195px;
+  top: 9px;
+}
+
+.Opc1:hover {
+  right: 285px;
+  top: 9px;
+}
+
+/*
+---------------------------------------
+Botones que contienen iconos y texto y un borde
+COMO USAR:
+<button class="BtnDownload">
+        <img src="../Atoms/Icons/google-play.png" alt="google-play">
+        <div class="FontAni">
+            <span class="FontSize3">Disponible en </span>
+            <span class="FontSize4">GOOGLE PLAY</span>
+        </div>
+    </button>
+---------------------------------------
+*/
+.BtnDownload {
+  width: 170px;
+  height: 40px;
+  background: transparent;
+  border: solid 3px #e98f25;
+  border-radius: 20px;
+}
+
+.BtnDownload img {
+  display: block;
+  width: 25px;
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+
+.BtnDownload div {
+  position: relative;
+  top: -28px;
+  left: 15px;
+}
+
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnDownload:hover, .BtnMenu:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  cursor: pointer;
+  position: relative;
+  right: 5px;
+}
+
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parrafo";
+  src: url("https://fonts.gstatic.com/s/archivonarrow/v30/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1iXlw398pJxk.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canji";
+  src: url("https://fonts.gstatic.com/s/newtegomin/v10/SLXMc1fV7Gd9USdBAfPlqfN0Q3ptkDMN.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Secundary";
+  src: url("https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k736J_B-i2yQag0-mac3OFiXMFuOLlNldbw.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estrella";
+  src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+.FontPromo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 30px;
+}
+
+.FontPromoTitulo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 40px;
+}
+
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontAni:hover {
+  animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 150vw;
+  }
+}
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontParrafo {
+  font-family: "Parrafo";
+  color: #e98f25;
+}
+
+.FontCanji {
+  font-family: "Canji";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontEstrella {
+  font-family: "Estrella";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 2px;
+}
+
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+.FontSecundary {
+  font-family: "Primary";
+  color: #000;
+}
+
+/*
+-----------------------------------------------
+BOTON MENU
+COMO USAR
+<button class="BtnMenu"><span class="FontAni">Ver Menú</span></button>
+-----------------------------------------------
+*/
+.BtnMenu {
+  width: 100px;
+  height: 30px;
+  background: #004000;
+  font-size: 16px;
+  border: solid 3px;
+  border-color: #e98f25;
+  border-radius: 20px;
+}
+
+/*
+--------------------------------------
+Botones que son solo letras
+COMO USAR:
+<div class="BtnNav"><span class="FontAni">INICIO</span></div>
+--------------------------------------
+*/
+.BtnNav {
+  font-size: 16px;
+}
+
+/*
+---------------------------------------
+Botones que son solo iconos
+COMO USAR: 
+<img src="../Atoms/Icons/acceso.png" alt="acceso" class="BtnIcons">
+---------------------------------------
+*/
+.BtnIcons {
+  display: block;
+  width: 40px;
+}
+
+/*
+----------------------------------------------------
+Efecto de los botones
+----------------------------------------------------
+*/
+.BtnNav:hover {
+  font-size: 18px;
+  margin-left: -5px;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.BtnIcons:hover {
+  animation: rotationIcon 0.5s forwards;
+  cursor: pointer;
+}
+
+@keyframes rotationIcon {
+  from {
+    transform: scale(1.1) rotate(0deg);
+  }
+  to {
+    transform: scale(1.1) rotate(360deg);
+  }
+}
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: solid 3px transparent;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  background-color: #000;
+}
+
+.Nav {
+  position: relative;
+  top: -70px;
+  right: 50px;
+}
+
+.Logo {
+  display: block;
+  width: 100px;
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
+
+.NombrePagina {
+  position: relative;
+  left: 200px;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*
+----------------------------------
+Clases de los tamaños de las fuentes
+----------------------------------
+*/
+.FontSize1 {
+  font-size: 8px;
+}
+
+.FontSize2 {
+  font-size: 10px;
+}
+
+.FontSize3 {
+  font-size: 12px;
+}
+
+.FontSize4 {
+  font-size: 14px;
+}
+
+.FontSize5 {
+  font-size: 16px;
+}
+
+.FontSize6 {
+  font-size: 18px;
+}
+
+.FontSize7 {
+  font-size: 20px;
+}
+
+.FontSize8 {
+  font-size: 22px;
+}
+
+.FontSize9 {
+  font-size: 26px;
+}
+
+.FontSize11 {
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "Primary";
+  src: url("https://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parrafo";
+  src: url("https://fonts.gstatic.com/s/archivonarrow/v30/tss2ApVBdCYD5Q7hcxTE1ArZ0bb1iXlw398pJxk.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Canji";
+  src: url("https://fonts.gstatic.com/s/newtegomin/v10/SLXMc1fV7Gd9USdBAfPlqfN0Q3ptkDMN.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Secundary";
+  src: url("https://fonts.gstatic.com/s/fredoka/v14/X7nP4b87HvSqjb_WIi2yDCRwoQ_k736J_B-i2yQag0-mac3OFiXMFuOLlNldbw.ttf") format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Estrella";
+  src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+.FontPromo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 30px;
+}
+
+.FontPromoTitulo {
+  text-shadow: #682207 1px 1px, #5d1e06 2px 2px, #511b06 3px 3px, #461705 4px 4px, #3a1304 5px 5px, #2e0f03 6px 6px, #230b02 7px 7px, #170802 8px 8px, #0c0401 9px 9px, black 10px 10px, #742608 0px 0px;
+  font-family: "Secundary";
+  color: #e98f25;
+  font-size: 40px;
+}
+
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontAni:hover {
+  animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 150vw;
+  }
+}
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+  font-family: "Primary";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontParrafo {
+  font-family: "Parrafo";
+  color: #e98f25;
+}
+
+.FontCanji {
+  font-family: "Canji";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.FontEstrella {
+  font-family: "Estrella";
+  background: linear-gradient(90deg, #bc572f 0%, rgb(233, 143, 37) 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  margin-top: 2px;
+}
+
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+.FontSecundary {
+  font-family: "Primary";
+  color: #000;
+}
+
+/*
+------------------------------------------
+Separador
+COMO USAR
+<div class="Separador"></div>
+------------------------------------------
+*/
+.Separador {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 3px 0;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+}
+
+/*
+-------------------------------------------
+Separador que incluye texto dentro
+COMO USAR
+<div class="SeparadorConText">
+        <p class="TextSeparador">
+            <span class="FontPrimary">¿Quienes Somos?</span>
+        </p>
+    </div>
+-------------------------------------------
+*/
+.SeparadorConText {
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+  border-style: solid;
+  border-width: 3px 0;
+  -o-border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+     border-image: linear-gradient(90deg, rgb(188, 87, 47) 0%, #e98f25 26%, rgb(227, 207, 127) 48%, rgb(233, 143, 37) 80%, rgb(188, 87, 47) 100%) 1;
+  text-align: center;
+  font-size: 40px;
+}
+
+.TextSeparador {
+  position: relative;
+  top: 10px;
+}/*# sourceMappingURL=Separadores.css.map */

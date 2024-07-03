@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Atoms/Icons/NORI-2.0.ico">
+    <title>NORI | Menú</title>
+    <link rel="stylesheet" href="/Templates/Reserva.css" type="text/css">
+    <link rel="stylesheet" href="/Atoms/Fonts/Fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div id="header"></div>
+    <!--eventos-->
+    <div class="Fichas contenedorEventos">
+        <div class="evento">
+            <div class="tituloEvento"><span class="FontCanji">花見  Hanami</span></div>
+            <div class="contenedorImagenE">
+                <img src="/Atoms/Img/imgEventos/EventoDeCerezo.jpg" alt="" class="imgEvento">
+            </div>
+            <div class="descripcionEvento FontParrafo FontSize8">“Festival de la Flor de Cerezo en NORI: Únete a nosotros para celebrar la belleza y la tradición del Hanami, el festival japonés de la flor del cerezo. Disfruta de una experiencia culinaria única con nuestro menú especial de sushi, inspirado en la primavera y la efímera belleza de los cerezos en flor. Sumérgete en la cultura japonesa mientras te deleitas con nuestros exquisitos platos, en un ambiente decorado al estilo de los tradicionales picnics de Hanami bajo los cerezos. ¡Ven y celebra con nosotros la llegada de la primavera y la belleza de la flor de cerezo!”</div>
+        </div>
+        <div class="evento">
+            <div class="tituloEvento"><span class="FontCanji">七夕 Tanabata</span></div>
+            <div class="contenedorImagenE">
+                <img src="/Atoms/Img/imgEventos/eventoDeLasEstrellas.jpg" alt="" class="imgEvento">
+            </div>
+            <div class="descripcionEvento FontParrafo FontSize8">“Festival de Tanabata en NORI: Únete a nosotros para celebrar Tanabata, una de las festividades más coloridas de Japón. Disfruta de nuestro menú especial de sushi mientras te sumerges en la tradición de escribir tus deseos en tiras de papel y colgarlos en nuestras decoraciones de bambú. Experimenta la magia de esta antigua celebración de amor y esperanza en nuestro restaurante. ¡Ven y haz un deseo bajo las estrellas de Tanabata con nosotros!”</div>
+        </div>
+        <div class="evento">
+            <div class="tituloEvento"><span class="FontCanji">Reuniones</span></div>
+            <div class="contenedorImagenE">
+                <img src="/Atoms/Img/imgEventos/eventoReunion.jpg" alt="" class="imgEvento">
+            </div>
+            <div class="descripcionEvento FontParrafo FontSize8">Evento de Cumpleaños en NORI: Celebra tu cumpleaños con un toque japonés. Disfruta de nuestro delicioso sushi y vive una experiencia única. Ofrecemos un menú especial para cumpleañeros y decoramos tu mesa con detalles festivos. ¡Ven a celebrar tu día especial con nosotros!</div>
+        </div>
+        <div class="evento cumpleaños">
+            <div class="tituloEvento"><span class="FontCanji">Cumpleaños</span></div>
+            <div class="contenedorImagenE">
+                <img src="/Atoms/Img/imgEventos/eventoDeCumpleaños.jpg" alt="" class="imgEvento">
+            </div>
+            <div class="descripcionEvento FontParrafo FontSize8">Evento de Reuniones en NORI: ¿Buscas un lugar para tu próxima reunión de negocios o encuentro con amigos? Nuestro restaurante ofrece un ambiente tranquilo y acogedor, perfecto para reuniones. Disfruta de nuestro exquisito sushi mientras te reúnes. Ofrecemos opciones de menú personalizadas para grupos. ¡Haz de tu reunión una experiencia memorable con nosotros!</div>
+        </div>
+    </div>
+    <div class="SeparadorConText">
+        <p class="TextSeparador">
+            <span class="FontPrimary">RESERVA</span>
+        </p>
+    </div>
+    <div class="contenedorFormularioReserva">
+        <form action="/Solicitudes/reserva.php" method="post" class="formularioReserva">
+            <div class="tituloR"><span class="FontPrimary FontSize8">INFORMACION RESTAURANTE</span></div>
+            <div class="infoRestauranteR">
+                <div class="FontPrimary"><span class="FontPrimary">Pais:</span></div>
+                <select name="Pais" id="PaisReserva" onchange="getciudad()" required></select>
+                <div class="FontPrimary"><span class="FontPrimary">Ciudad:</span></div>
+                <select name="Ciudad" id="CiudadReserva" onchange="getrestaurante()" required></select>
+                <div class="FontPrimary"><span class="FontPrimary">Restaurante:</span></div>
+                <select name="Restaurante" id="RestauranteReserva" required></select>
+            </div>
+            <div class="tituloR"><span class="FontPrimary FontSize8">INFORMACION RESERVA</span></div>
+            <div class="infoReserva">
+                <div class="FontPrimary"><span class="FontPrimary">Número de personas:</span></div>
+                <input type="number" id="NumPersonas" name="numeroPersonas" required>
+                <div class="FontPrimary"><span class="FontPrimary">Fecha De Reserva:</span></div>
+                <input type="date" id="fechaReserva" name="Fecha" required>
+                <div class="FontPrimary"><span class="FontPrimary">Hora Reserva Disponible:</span></div>
+                <select id="HoraReserva" name="Hora" required></select>
+            </div>
+            <div class="nota FontParrafo FontSize4">Nota: Durante el fin de semana no se aceptan reservas</div>
+            <div class="lineaSeparador"></div>
+            <div class="tituloR"><span class="FontPrimary FontSize8">INFORMACION ADICIONAL</span></div>
+            <div class="infoAdicionalReserva">
+                <div class="ocasion">
+                    <div class="FontPrimary"><span class="FontPrimary">Ocación o evento:</span></div>
+                    <input type="text" id="ocasion" name="Ocasion" placeholder="Opcional" maxlength="25">
+                </div>
+                <div class="otrosDatos">
+                    <div><span class="FontPrimary">¿Alguna especificación del evento?</span></div>
+                    <textarea id="EspecificacionEvento" name="Comentario" placeholder="Opcional" maxlength="100"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="Reservar">Reservar</button>
+        </form>
+    </div>
+    <!--FOOTER-->
+    <div id="footer"></div>
+    <div id="ventanaModalLogin"></div>
+    <div id="incluir"></div>
+    <div class="VentanaModal" id="VentanaModalReserva">
+        <div class="ModalContenido" id="ContenidoVentanaModalReserva">
+        </div>
+    </div>
+    <script src="/Solicitudes/reserva.js"></script>
+    <script src="/Solicitudes/session.js"></script>
+</body>

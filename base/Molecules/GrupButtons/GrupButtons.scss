@@ -1,0 +1,18 @@
+@use "../../Atoms/Buttons/Buttons.scss";
+@use "../Buttons/Button.scss";
+
+.Download {
+    width: 500px;
+    height: 100px;
+}
+.BtnDownload {
+    margin: 0 10px;
+}
+.Redes {
+    width: 500px;
+    height: 40px;
+    display: flex;
+}
+.Redes > .BtnIcons {
+    margin: 0 50px;
+}

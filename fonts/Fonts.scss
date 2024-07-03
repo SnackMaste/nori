@@ -1,0 +1,136 @@
+@use "./colors/Colors.scss" as C;
+
+@font-face {
+    font-family: "Primary";
+    src: url('./primary.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Parrafo";
+    src: url('./parrafo.ttf');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Canji";
+    src: url('./canji.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Secundary";
+    src: url('./secundary.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Estrella";
+    src: url(../Fonts/wingdings-cufonfonts/wingding.ttf);
+}
+/*
+---------------------------------------
+Fuente con sombra larga
+---------------------------------------
+*/
+@function shadow-string($color1, $color2, $length){
+    $total-length: $length;
+    $string: $color1 0px 0px;
+    @while $length > 0 {
+        $mix-amount: 100 - (($length / $total-length) * 100);
+        $mixed-color: mix($color1,$color2, $mix-amount);
+        $string-addition: $length+px $length+px;
+        $string: $mixed-color $string-addition, $string;
+        $length: $length - 1;  
+    }
+    @return $string;
+}
+@mixin longshadow($color1, $color2, $length) {  
+    text-shadow: shadow-string($color1, $color2, $length);    
+}
+.FontPromo {
+    @include longshadow(C.$Letras, C.$Primary, 10);
+    font-family: "Secundary";
+    color: C.$Border;
+}
+.FontPromoSub {
+    @include longshadow(C.$Primary, C.$Primary, 7);
+    font-family: "Secundary";
+    color: C.$Manteniment;
+}
+.FontPromoTitulo {
+    @include longshadow(C.$Letras, C.$Primary, 10);
+    font-family: "Secundary";
+    color: C.$Border;
+}
+/*
+---------------------------------------------
+FontAni contiene una animacion en el cual se mueve la gradient que contienen las letras
+---------------------------------------------
+*/
+.FontAni {
+        font-family : "Primary";
+        background: C.$Secundary;
+        background-clip : text;
+        color : transparent;
+        }
+.FontAni:hover {
+    animation: slidebg 60s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+    background-position:150vw;
+    }
+}
+
+/*
+--------------------------------------
+Fuente que contiene de color una gradient
+--------------------------------------
+*/
+.FontPrimary {
+    font-family : "Primary";
+    background: C.$Secundary;
+    background-clip : text;
+    color : transparent;
+    }
+
+.FontParrafo {
+    font-family: "Parrafo";
+    color: C.$Border;
+}
+
+.FontCanji {
+    font-family : "Canji";
+    background: C.$Secundary;
+    background-clip : text;
+    color : transparent;
+}
+
+.FontEstrella {
+    font-family : "Estrella";
+    background: C.$Secundary;
+    background-clip : text;
+    color : transparent;
+    margin-top: 2px;
+    }
+/*
+---------------------------------
+Fuente unicolor y estatico
+---------------------------------
+*/
+@mixin FontSecundary ($Color:C.$Primary){
+    font-family: "Primary";
+    color: $Color;
+}
+.FontSecundary {
+    font-family: "Primary";
+    color: C.$Primary;
+}
+
+

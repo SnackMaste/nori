@@ -1,0 +1,281 @@
+@use "../../Molecules/Contador/Contador.scss";
+@use "../../Atoms/Colors/Colors.scss" as C;
+@use "../../Atoms/FontsSize/FontsSize.scss" as F;
+
+.CarritoCompras {
+    z-index: 10;
+    position: fixed;
+    top: 75vh;
+    right: 10vh;
+    height: 120px;
+}
+.ImgCarrito {
+    position: relative;
+    top: -60px;
+    display: block;
+    width: 100px;
+    z-index: 8;
+}
+.CarritoCompras:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.ContadorProductos {
+    position: relative;
+    top: -10px;
+    left: 50px;
+    z-index: 9;
+}
+.TotalPrecioProductos {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    z-index: 9;
+}
+//-------------------------------------------//
+.TablaPedido thead tr th {
+    padding: 5px 5px;
+    height: 30px;
+}
+.nombreProductoPedido {
+    width: 250px;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid C.$Border;
+    text-align: center;
+}
+.cantidadProductoPedido{
+    width: 20px;
+}
+.valorUniProcuctoPedido{
+    width: 100px;
+}
+.valorProductoPedido{
+    width: 100px;
+}
+.quitarProductoPedido{
+    width: 20px;
+}
+.agregarProductoPedido{
+    width: 20px;
+}
+.eliminarProductoPedido{
+    width: 20px;
+}
+.IcoBasura {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.ContenedorTablaPedido {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.TituloPedido {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.TablaPedido tbody tr td {
+    height: 30px;
+}
+.Total {
+    width: 70%;
+}
+.ValorAPagar {
+    width: 30%;
+}
+.ContenedorTablaTotal{
+    margin-top: 25px;
+    width: 100%;
+}
+.ContenedorBotones {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.ContenedorBotones button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: F.$FontSize4;
+    background-color: C.$Border;
+    color: C.$Primary;
+    font-family: Primary;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 20px;
+    width: 200px;
+}
+.TituloPedido input {
+    margin-left: 30px;
+}
+#CantidadPuntos {
+    width: 50px;
+    margin: auto 20px;
+}
+.CantidadPuntos {
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+#btnAceptarPuntos:hover {
+    margin-right: -5.5px;
+}
+/*-------Tipo Pedido*/
+.TituloConMargen {
+    margin-top: 30px;
+}
+.formDireDomi {
+    margin-left: 5vw;
+}
+.DireCliente, .DireNueva{
+    display: flex;
+    margin-top: 40px;
+}
+.DireNueva{
+    margin-bottom: 8.6px;
+}
+.DireCliente fieldset, .DireNueva fieldset {
+    display: flex; 
+    border: none;
+}
+.DireCliente fieldset div {
+    margin-right: 5vw;
+}
+.DireCliente fieldset div div, .DireNueva fieldset div {
+    margin: auto 10px;
+}
+.rellenoRecoger{
+    height: 40vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.mensajeCiudad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+/*metodo de pago*/
+.logoTarjetas {
+    width:5vw;
+}
+.contenedorLogosTarjetas {
+    display: flex; 
+    position: absolute; 
+    left: 25vw
+}
+.contenedorInfoTarjeta {
+    margin: 4vw 6vh;
+    display: flex;
+    position: relative;
+}
+.imgTarjeta {
+    width: 20vw; 
+    border-radius: 1vw;
+}
+.cvv{
+    color: black;
+    position:absolute;
+    left: 9vw;
+    top: 13.5vh; 
+    display:none;
+}
+.numeroTarjeta1, .numeroTarjeta2, .numeroTarjeta3, .numeroTarjeta4 {
+    color: white;
+    position:absolute;
+    top: 15.5vh
+}
+.numeroTarjeta1{
+    left: 3vw;
+}
+.numeroTarjeta2{
+    left: 7vw;
+}
+.numeroTarjeta3{
+    left: 11vw;
+}
+.numeroTarjeta4{
+    left: 15vw;
+}
+.caducidad{
+    color: white;
+    position:absolute;
+    left: 6.5vw;
+    top: 23vh
+}
+.nombreTitular{
+    color: white;
+    position:absolute;
+    left: 1vw;
+    top: 26vh;
+}
+.contenedorFormularioTarjeta{
+    text-align: center;
+    padding-left:5vw;
+    padding-top: 2vh;
+}
+.ContenedorNumeroTar{
+    margin-bottom: 10px;
+}
+.inputNumTar{
+    width:6vw; 
+    margin: 10px 10px;
+}
+.validaHastaTitulo{
+    margin-top: 30px;
+    margin-left:-20px
+}
+.cvvinput{
+    margin-top: 20px; 
+    margin-left:60px;
+}
+.selectCvv{
+    width:4vw;
+    margin-top:10px;
+}
+.inputCvv{
+    width:4vw; 
+    margin: 20px 10px;
+    margin-left: 40px;
+}
+#Pago{
+    width: 30vw;
+    position: absolute;
+    top: -5vh;
+    left: 20vw;
+}
+#validando{
+    position: absolute;
+    top: 40vh;
+    left: 15vw;
+    width: 40vw;
+}
+#fondoValidando{
+    position: absolute;
+    top: -50vh;
+    left: -50vw;
+    width: 200%;
+    height: 180%;
+    background-color: C.$modal;
+}
+#contenedorValidando{
+    display: none;
+}
