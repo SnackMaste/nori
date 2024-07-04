@@ -115,6 +115,33 @@ function cargar_restaurantes_ep(){
         })
         .catch(err => console.log(err))
     }
-}
+};
 
-
+function cargaRestaurantes(ciudadElement){
+    var ciudad = ciudadElement.value;
+    if(ciudad == ""){
+        return;
+    }else{
+        //CREAMOS UN NUEVO form-data
+        let formData = new FormData()
+        //LE COLOCAMOS EL VALOR DE LA VARIABLE DE CIUDAD Y LE COLOCAMOS EL NOMBRE DE CIUDAD
+        formData.append('ciudad', ciudad);
+        formData.append('local', "reserva");
+        //SELECCIONAMOS DONDE VAMOS A CARGAR LA RESPUESTA QUE RECIBIREMOS DEL CONTROLADOR
+        let targetElement = document.getElementById('restaurante');
+        //LA URL DEL CONTROLADOR
+        let url = 'controller/filtros.controlador.php';
+        //HACEMOS LA SOLICITUD
+        fetch(url, {
+            method: "POST", 
+            body: formData, 
+            mode: 'cors'
+        })
+        .then(response => response.text())
+        .then(data => {
+            //CARGAMOS LA RESPUESTA RECIBIDA DESDE EL CONTROLADOR
+            targetElement.innerHTML=data
+        })
+        .catch(err => console.log(err))
+    }
+};
