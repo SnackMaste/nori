@@ -7,10 +7,10 @@ $form='<!-- PANTALLAS EXTRA GRANDES -->
     <form action="" name="ingreso_xl" id="ingreso_xl" class="d-flex align-items-center flex-column w-75 my-5 text-center" >
         <input type="hidden" name="usuario" id="usuario_xl" value="persons">
         <label for="email"><span class="FontPrimary fs-5" >Correo Electrónico</span></label>
-        <input type="email" name="email" id="email_xl" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="email" name="email" id="email_xl" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertEmail_xl" class="FontParrafo text-danger fs-6 text-center d-none">Correo no registrado</span>
         <label for="password"><span class="FontPrimary fs-5" >Contraseña</span></label>
-        <input type="password" name="password" id="password_xl" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="password" name="password" id="password_xl" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertPass_xl" class="FontParrafo text-danger fs-6 text-center d-none">Contraseña Incorrecta</span>
         <div class="d-flex my-2">
             <input type="checkbox" onclick="showpassworld(\'password_xl\')">
@@ -35,10 +35,10 @@ $form='<!-- PANTALLAS EXTRA GRANDES -->
     <form action="" name="ingreso_sm" id="ingreso_sm" class="d-flex align-items-center flex-column w-75 my-5" >
         <input type="hidden" name="usuario" id="usuario_sm" value="persons">
         <label for="email"><span class="FontPrimary fs-5 " >Correo Electrónico</span></label>
-        <input type="text" name="email" id="email_sm" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="text" name="email" id="email_sm" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertEmail_sm" class="FontParrafo text-danger fs-6 text-center d-none">Correo no registrado</span>
         <label for="password"><span class="FontPrimary fs-5" >Contraseña</span></label>
-        <input type="password" name="password" id="password_sm" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="password" name="password" id="password_sm" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertPass_sm" class="FontParrafo text-danger fs-6 text-center d-none">Contraseña Incorrecta</span>
         <div class="d-flex my-2">
             <input type="checkbox" onclick="showpassworld(\'password_sm\')">
@@ -63,10 +63,10 @@ $form='<!-- PANTALLAS EXTRA GRANDES -->
     <form action="" name="ingreso_ep" id="ingreso_ep" class="d-flex align-items-center flex-column w-100 my-5" >
         <input type="hidden" name="usuario" id="usuario_ep" value="persons">
         <label for="email"><span class="FontPrimary fs-6 " >Correo Electrónico</span></label>
-        <input type="text" name="email" id="email_ep" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="text" name="email" id="email_ep" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertEmail_ep" class="FontParrafo text-danger fs-6 text-center d-none">Correo no registrado</span>
         <label for="password"><span class="FontPrimary fs-6" >Contraseña</span></label>
-        <input type="password" name="password" id="password_ep" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" >
+        <input type="password" name="password" id="password_ep" placeholder="Ingrese la contraseña" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertPass_ep" class="FontParrafo text-danger fs-6 text-center d-none">Contraseña Incorrecta</span>
         <div class="d-flex my-2">
             <input type="checkbox" onclick="showpassworld(\'password_ep\')">
