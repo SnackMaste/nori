@@ -127,7 +127,7 @@ class Formularios_Modelos{
         $response = file_get_contents($url, false, $contexto);
         if ($response !== false) {
             $data = json_decode($response, true);
-            $respuesta = $data['results']['comment'];
+            $respuesta = $data['results']['comment'][0]['response'];
             if (password_verify($value, $respuesta)) {
                 // Las contraseñas coinciden
                 return 'Coincide';

@@ -65,9 +65,21 @@ class Filtros_Controlador{
         }
     }
 }
-
-if (isset($_POST['pais'])) {
-    $solicitud = new Filtros_Controlador();
-    $solicitud -> ctr_ciudad();
-    return $solicitud;
-};
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if (isset($_POST['pais'])) {
+        $solicitud = new Filtros_Controlador();
+        $solicitud -> ctr_ciudad();
+        return $solicitud;
+    };
+    if($_POST['local'] == "reserva") {
+        $solicitud = new Filtros_Controlador();
+        $response = $solicitud -> ctr_restaurante($_POST['ciudad']);
+        $data = json_decode($response, true);
+        $opciones='<option value="" selected ><span class="FontParrafo">Seleccione un restaurante</span></option>';
+        foreach($data["results"] as $result){
+            //CONCATENAMOS CADA ARRAY CON SUS VALORES
+            $opciones .= '<option value="' . $result['id_restaurant'] . '" class="FontParrafo">'.$result['name_street_type'].' '.$result['name_address'].' # '.$result['number_address'].' '.$result['neighborhood_address'].'</option>';
+        };
+        echo $opciones;
+    };
+}

@@ -33,7 +33,7 @@ class FormController{
     static public function ctr_response($response){
         if ($response !== false) {
             $data = json_decode($response, true);
-            $respuesta = $data['results']['comment'];
+            $respuesta = $data['results']['comment'][0]['response'];
             return $respuesta;
         }else {
             echo 'Error al obtener datos de la API.';
