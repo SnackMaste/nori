@@ -17,7 +17,7 @@ class Modal_Model{
         </div>
         <!-- Modal footer -->
         <div class="modal-footer border-3 border-img-t">
-            <button type="button" class="btn btn-danger FontParrafo text-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger FontParrafo text-light" data-bs-dismiss="modal">Cerrar</button>
         </div>';
         return $respuesta;
     }

@@ -16,7 +16,7 @@ class Session_Modelo {
             $columna = "id_client_person";
         }
         global $uri,$key;
-        $url= $uri."$user,clients?select=$datos,clients.id_address_client,clients.phone_client,clients.email_client,clients.image_client&&linkTo=id_client,email_client&&equalTo=$columna|'$email'&join=1&where=1";
+        $url= $uri."$user,clients?select=$datos,clients.id_address_client,clients.phone_client,clients.email_client,clients.image_client&&linkTo=id_client,email_client&equalTo=$columna|'$email'&join=1&where=1";
         $data = [
             'http' => [
                 'method' => 'GET',
@@ -28,8 +28,26 @@ class Session_Modelo {
         if ($response !== false) {
             return $response;
         }else {
-            echo 'Error al obtener datos de la API.';
+            return 'Error al obtener datos de la API.';
         }
-        return $response;
+    }
+
+    //------------- OBTENCIÓN DE LOS DATOS DE LA DIRECCIÓN DEL CLIENTE -----------//
+    static public function mdl_address($id){
+        global $uri,$key;
+        $url = $uri."street_types,addresses?select=name_street_type,addresses.*&linkTo=id_street_type_address,id_address&equalTo=id_street_type|$id&join=1&where=1";
+        $data = [
+            'http' => [
+                'method' => "GET",
+                'header' => "Authorization: Bearer $key"
+            ],
+        ];
+        $context = stream_context_create($data);
+        $response = file_get_contents($url, false, $context);
+        if ($response !== false) {
+            return $response;
+        }else {
+            return 'Error al obtener datos de la API.';
+        }
     }
 }

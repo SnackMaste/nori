@@ -1,4 +1,4 @@
-<!-- CODIGO DEL FUNCIONAMIENTO DE LOS SELECT QUE SON DEPENDIENTES -->
+<!-- CÓDIGO DEL FUNCIONAMIENTO DE LOS SELECT QUE SON DEPENDIENTES -->
 <script src="./components/js/filtros_dependientes.js"></script>
 <!-- CONTENIDO DE LOS EVENTOS DE NORI -->
 <div class="Fichas contenedorEventos">

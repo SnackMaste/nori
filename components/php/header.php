@@ -70,11 +70,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="NavLink nav-link" href="" onclick="getRuta()">
-                                    <div class="BtnNav">
-                                        <span class="FontAni">INICIAR SESIÓN</span>
-                                    </div>
-                                </a>
+                                <button class="BtnNav border-0 bg-black" onclick="getRuta()">
+                                    <span class="FontAni">INICIAR SESIÓN</span>
+                                </button>
                             </li>
                         </ul>
                     </div>
