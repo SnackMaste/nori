@@ -57,7 +57,7 @@
                     </div>
                     <input type="email" placeholder="Correo Electrónico" name="email" id="email" class="mb-3 mt-2 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
                     <span id="alertEmail" class="FontParrafo text-danger fs-6 text-center mb-2 d-none">Este correo ya esta registrado</span>
-                    <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[\w!@#$%^&*_-]{8,}$" title="Debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número" placeholder="Contraseña" name="password" id="password" class="mb-3 mt-2 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
+                    <input type="password" placeholder="Contraseña" name="password" id="password" class="mb-3 mt-2 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
                     <input type="password" placeholder="Confirme la Contraseña" name="confirmPassword" id="confirmPassword" class="mb-3 mt-2 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
                     <span id="alertPass" class="FontParrafo text-danger fs-6 text-center mb-2 d-none">Las contraseñas no coinciden</span>
                     <span id="alertPassMin" class="FontParrafo text-danger fs-6 text-center mb-2 d-none">La contraseña debe tener mínimo 8 caracteres, una mayúscula, una minúscula y un número</span>

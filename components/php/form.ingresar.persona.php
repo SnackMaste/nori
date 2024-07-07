@@ -62,7 +62,7 @@ $form='<!-- PANTALLAS EXTRA GRANDES -->
     <div class="w-100 border-img-b" ></div>
     <form action="" name="ingreso_ep" id="ingreso_ep" class="d-flex align-items-center flex-column w-100 my-5" >
         <input type="hidden" name="usuario" id="usuario_ep" value="persons">
-        <label for="email"><span class="FontPrimary fs-6 " >Correo Electrónico</span></label>
+        <label for="email" class=" text-center"><span class="FontPrimary fs-6 " >Correo Electrónico</span></label>
         <input type="text" name="email" id="email_ep" placeholder="example@domain.com" class="my-3 w-75 border border-3 border-warning rounded-3 bg-black FontParrafo fs-5 text-center" required>
         <span id="alertEmail_ep" class="FontParrafo text-danger fs-6 text-center d-none">Correo no registrado</span>
         <label for="password"><span class="FontPrimary fs-6" >Contraseña</span></label>

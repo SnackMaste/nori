@@ -28,7 +28,7 @@ document.getElementById('registro').addEventListener('submit', function (e) {
         apellido1 = document.getElementById('apellido1').value;
         apellido2 = document.getElementById('apellido2').value;
     }else if(usuario == "empresa"){
-        nombre1 = document.getElementById('nombre1').value;
+        nombre1 = document.getElementById('nombreEmpresa').value;
     }
     var identificacion = document.getElementById('identificacion').value;
     var pais = document.getElementById('pais').value;
@@ -128,7 +128,6 @@ document.getElementById('registro').addEventListener('submit', function (e) {
     function registro(){
         let registro = new FormData();
         registro.append('action', 'registro');
-        registro.append('procedure',procedure);
         registro.append('usuario',usuario);
         registro.append('nombre1',nombre1);
         registro.append('nombre2',nombre2);
