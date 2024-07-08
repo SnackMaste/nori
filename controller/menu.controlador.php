@@ -33,7 +33,7 @@ class Menu_Controlador {
                 <div class="w-100 text-center border-img-t" id="1">
                     <div class="d-flex justify-content-around">
                         <div class="w-50 py-1" style="border-right: solid 0.25vh;border-image: linear-gradient(90deg, rgba(188,87,47,1) 0%, #e98f25 26%, rgba(227,207,127,1) 48%, rgba(233,143,37,1) 80%, rgba(188,87,47,1) 100%)1;">
-                            <button class="bg-black border-0" data-bs-toggle="modal" data-bs-target="#detalle" data-name="'.$result["name_product"].'" data-description="'.$result["description_product"].'" data-img="'.$result["image_product"].'" onclick="detalle(this)">
+                            <button class="bg-black border-0" data-bs-toggle="modal" data-bs-target="#detalle" data-name-m="'.$result["name_product"].'" data-description-m="'.$result["description_product"].'" data-img-m="'.$result["image_product"].'" onclick="detalle(this)">
                                 <span class="FontAni Detalle">DETALLE</span>
                             </button>
                         </div>
