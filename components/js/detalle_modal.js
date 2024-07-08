@@ -1,8 +1,8 @@
 //Función que cargara la información del modal
 function detalle(producto){
-    nameProduct= producto.getAttribute('data-name');
-    descriptionProduct= producto.getAttribute('data-description');
-    imageProduct= producto.getAttribute('data-img');
+    nameProduct= producto.getAttribute('data-name-m');
+    descriptionProduct= producto.getAttribute('data-description-m');
+    imageProduct= producto.getAttribute('data-img-m');
     //creamos el elemento que enviara la información
     let formData = new FormData();
     //lo llenamos de la información

@@ -20,9 +20,9 @@ function tipoFiltro(){
             textFormat = removeAccents(textSearch.value.toLowerCase());
             products = document.querySelectorAll('[data-name]');
             products.forEach(element => {
-            productName = removeAccents(element.getAttribute('data-name').toLowerCase()); 
-            productName.includes(textFormat) ? element.classList.remove('d-none') : element.classList.add('d-none');
-        });
+                productName = removeAccents(element.getAttribute('data-name').toLowerCase()); 
+                productName.includes(textFormat) ? element.classList.remove('d-none') : element.classList.add('d-none');
+            });
         }
     }else{
         if(texto === null || texto === undefined || texto === ''){

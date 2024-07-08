@@ -9,7 +9,7 @@ class Modal_Model{
         <!-- Modal body -->
         <div class="modal-body d-flex flex-column flex-wrap w-100">
             <div class="d-flex justify-content-center align-items-center w-100">
-                <img src="./images/products/'.$data['image'].'" class="border border-3 border-warning rounded-3" alt="" class="">
+                <img src="./images/products/'.strtolower($data['image']).'" class="border border-3 border-warning rounded-3" alt="" class="">
             </div>
             <div class="FontParrafo w-100 fs-5 text-center my-2">
             '.$data['description'].'
